@@ -1,0 +1,80 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function List() {
+  const treatments = [
+    { name: "Spinal Problems", slug: "spinal-problems" },
+    { name: "Arthritis Treatment", slug: "arthritis-treatment" },
+    { name: "Cancer Treatment", slug: "cancer-treatment" },
+    { name: "Autism Treatment", slug: "autism-treatment" },
+    { name: "Kidney Disorder", slug: "kidney-disorder" },
+    { name: "Skin Complaints", slug: "skin-complaints" },
+    { name: "Post Stroke Management", slug: "post-stroke-management" },
+    { name: "Gynecological Issues", slug: "gynecological-issues" },
+    { name: "Rectal Problems", slug: "rectal-problems" },
+    { name: "Thyroid Treatment", slug: "thyroid-treatment" },
+    { name: "Obesity and Overweight", slug: "obesity-overweight" },
+    { name: "Cholesterol", slug: "cholesterol" },
+    { name: "Varicose Vein", slug: "varicose-vein" },
+    { name: "Diabetes", slug: "diabetes" },
+    { name: "Primary Hypertension", slug: "primary-hypertension" },
+    { name: "Lung Disorders", slug: "lung-disorders" },
+    { name: "Liver Disorders", slug: "liver-disorders" },
+    { name: "Mental Disorders", slug: "mental-disorders" },
+    { name: "Sinusitis", slug: "sinusitis" },
+    { name: "Constipation", slug: "constipation" },
+    { name: "Cervical Spondylosis", slug: "cervical-spondylosis" },
+    { name: "Osteoarthritis", slug: "osteoarthritis" },
+    { name: "Knee Pain", slug: "knee-pain" },
+    { name: "Insomnia", slug: "insomnia" },
+    { name: "Ayurvedic Cosmetology", slug: "ayurvedic-cosmetology" },
+    { name: "Back Pain", slug: "back-pain" },
+    { name: "Post Natal Care", slug: "post-natal-care" },
+    { name: "Panchakarma", slug: "panchakarma" },
+    { name: "Rejuvenation", slug: "rejuvenation" },
+    { name: "Fatty Liver", slug: "fatty-liver" },
+    { name: "Parkinson’s", slug: "parkinsons" },
+    { name: "Joint Pain", slug: "joint-pain" },
+  ];
+
+  return (
+    <div className="w-full">
+      
+      {/* HERO */}
+      <div className="relative w-full h-[220px] md:h-[400px]">
+        <Image
+          src="/images/treatment.webp"
+          alt="Treatments"
+          fill
+          className="object-cover"
+        />
+
+        <div className="absolute inset-0 bg-black/40" />
+
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="!text-white !text-6xl md:!text-7xl">
+            Treatments
+          </h1>
+        </div>
+      </div>
+
+      {/* TILES */}
+      <div className="bg-[#2F6B3B] py-12 px-4 md:px-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          
+          {treatments.map((item, index) => (
+            <Link
+              key={index}
+              href={`/treatments/${item.slug}`}
+              className="bg-[#F28C18] text-white text-center py-5 px-4 rounded-[20px] font-semibold text-lg hover:scale-105 transition duration-300 shadow-md flex items-center justify-center min-h-[80px]"
+            >
+              {item.name}
+            </Link>
+          ))}
+
+        </div>
+      </div>
+
+    </div>
+  );
+}
