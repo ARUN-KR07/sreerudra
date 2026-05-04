@@ -28,13 +28,13 @@ export default function TreatmentsSection() {
         <div className="max-w-7xl mx-auto text-center">
 
           {/* Heading */}
-          <h1
+          <h2
             style={{ color: "#000000" }}
             className="text-4xl md:text-5xl font-semibold leading-tight"
           >
             Transform Your Body,{" "}
             <span>Mind And Life</span>
-          </h1>
+          </h2>
 
           <p className="mt-4 text-green-900 max-w-2xl mx-auto text-[18px]">
             Indulge in the transformative rejuvenation of Ayurveda today and feel
@@ -46,22 +46,18 @@ export default function TreatmentsSection() {
             {data.map((item, i) => (
               <div
                 key={i}
-                className="relative bg-white border border-green-600 rounded-[40px] p-8 flex flex-col justify-between min-h-[420px]
-                transition-all duration-500 
-                hover:-translate-y-3 hover:shadow-2xl hover:border-green-700 group"
+                className="relative bg-white border border-green-600 rounded-[40px] p-8 flex flex-col justify-between min-h-[420px] transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl hover:border-green-700 group"
               >
                 <div>
                   <h3
                     style={{ fontFamily: "Playfair Display" }}
-                    className="text-[28px] font-semibold mb-4 
-                    transition duration-300 group-hover:text-green-700"
+                    className="text-[28px] font-semibold mb-4 transition duration-300 group-hover:text-green-700"
                   >
                     {item.title}
                   </h3>
 
                   <p
-                    className="text-black text-[18px] leading-relaxed 
-                    transition duration-300 group-hover:text-gray-700"
+                    className="text-black text-[18px] leading-relaxed transition duration-300 group-hover:text-gray-700"
                   >
                     {item.desc}
                   </p>
@@ -70,17 +66,14 @@ export default function TreatmentsSection() {
                 {/* Button */}
                 <div className="mt-6 flex justify-center">
                   <button onClick={() => setOpen(true)}
-                    className="bg-green-700 text-white px-6 py-2 rounded-full 
-                    transition-all duration-300 
-                    hover:bg-green-800 hover:scale-105 hover:shadow-lg"
+                    className="bg-green-700 text-white px-6 py-2 rounded-full transition-all duration-300 hover:bg-green-800 hover:scale-105 hover:shadow-lg"
                   >
                     Book Now
                   </button>
                 </div>
 
                 {/* Subtle Glow */}
-                <div className="absolute inset-0 rounded-[40px] opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none 
-                bg-gradient-to-b from-green-100/30 to-transparent" />
+                <div className="absolute inset-0 rounded-[40px] opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none bg-gradient-to-b from-green-100/30 to-transparent" />
               </div>
             ))}
           </div>

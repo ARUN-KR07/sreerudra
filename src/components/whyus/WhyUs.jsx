@@ -6,15 +6,12 @@ const WhyUs = () => {
     <div className="w-full">
       {/* Hero Section */}
       <section className="relative w-full h-[400px] flex items-center justify-center">
-        {/* Background Image */}
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=crop")' }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
-
-        {/* Content */}
         <div className="relative z-10 text-center">
           <h1 className="text-white text-5xl md:text-6xl font-bold tracking-wide" style={{ color: 'white' }}>Why us</h1>
         </div>
@@ -22,23 +19,23 @@ const WhyUs = () => {
 
       {/* Facilities Section */}
       <section className="page-container page-spacing">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          {/* Image */}
-          <div className="relative w-full aspect-[4/3] rounded-tl-[80px] rounded-br-[80px] overflow-hidden shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+          {/* Image — always on top for mobile+tablet, left on desktop */}
+          <div className="relative w-full aspect-[4/3] rounded-tl-[80px] rounded-br-[80px] overflow-hidden shadow-xl order-1 lg:order-1">
             <Image
               src="/images/cause6.png"
               alt="Ayurvedic Herbs"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
 
-          {/* Content */}
-          <div className="space-y-6">
+          {/* Content — below image on mobile+tablet, right on desktop */}
+          <div className="space-y-6 order-2 lg:order-2">
             <p className="text-sm font-semibold text-gray-800 uppercase tracking-wider">Our Facilities</p>
             <h2>Best Ayurveda treatment Facilities in Kerala</h2>
-
             <div className="space-y-4 text-gray-800 text-[18px]">
               <p>
                 The hospital boasts of state of the art facility with a combination of modern and traditional treatment facilities available to make treatments effective.
@@ -53,21 +50,32 @@ const WhyUs = () => {
                 This Ayurveda retreat in Kerala provides accommodation, treatment, medicines and prepare different types of food specified by the doctor for all its in-patient based on the treatment category and food specification.
               </p>
             </div>
-
             <button className="bg-[#f59720] hover:bg-[#d8841a] text-white px-8 py-3 rounded-md font-medium transition-colors">
               Book an Appointment
             </button>
           </div>
+
         </div>
       </section>
 
       {/* Ways of Treatments Section */}
       <section className="page-container page-spacing bg-gray-50/50">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          {/* Content */}
-          <div className="space-y-6 order-2 md:order-1">
-            <h2>Our ways of Treatments</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
+          {/* Image — always on top for mobile+tablet, right on desktop */}
+          <div className="relative w-full aspect-[4/3] rounded-tr-[80px] rounded-bl-[80px] overflow-hidden shadow-xl order-1 lg:order-2">
+            <Image
+              src="/images/cause7.png"
+              alt="Hospital Corridor"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+
+          {/* Content — below image on mobile+tablet, left on desktop */}
+          <div className="space-y-6 order-2 lg:order-1">
+            <h2>Our ways of Treatments</h2>
             <div className="space-y-4 text-gray-800 text-[18px] leading-snug">
               <p>
                 Ayurveda is one of the oldest medical systems in the world. It was derived from its ancient Sanskrit roots - 'ayus' (life) and 'ved' (knowledge) over 5000 years ago. It is India's traditional health care system. The main source of knowledge is the Vedas, more specifically 'Atharvaveda', the fourth of the series which dates back to 1000 B.C. Of all the treatises the famous ones that survived extinction are 'Charaka Samhita' and the Sushruta Samhita' - internal medicine and surgery respectively.
@@ -78,20 +86,10 @@ const WhyUs = () => {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="relative w-full aspect-[4/3] rounded-tr-[80px] rounded-bl-[80px] overflow-hidden shadow-xl order-1 md:order-2">
-            <Image
-              src="/images/cause7.png"
-              alt="Hospital Corridor"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
         </div>
       </section>
 
-      {/* Ashtanga Hridayam Section */}
+      {/* Ashtanga Hridayam Section — unchanged */}
       <section className="page-container page-spacing">
         <div className="space-y-6 mb-12">
           <p className="text-sm font-semibold text-[#008439] uppercase tracking-wider">Treatments</p>
@@ -141,7 +139,6 @@ const WhyUs = () => {
               All the matters in the universe is made up of five elements such as Earth, Water, Fire, Wind and space or void or ether. Earth represents the solid heavy state; water represents the free-flowing liquid state. Since the body is also an object, it is also made up of five elements. The health is preserved only when these five elements comprising our body are in homogeneous state and equilibrium. Our food and lifestyle has an impact on this delicate balance of five elements. However, these foodstuffs and lifestyles have effects on the body.
             </p>
           </div>
-
           <button className="bg-[#f59720] hover:bg-[#d8841a] text-white px-8 py-3 rounded-md font-medium transition-colors">
             Consult Us
           </button>

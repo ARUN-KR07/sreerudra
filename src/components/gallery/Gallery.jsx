@@ -1,39 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { galleryItems } from '@/lib/galleryData';
 
 const Gallery = () => {
-  const galleryItems = [
-    {
-      id: 1,
-      image: "/images/cause1.png",
-      title: "Inauguration Glimpses : Sreerudra Ayurveda Trivandrum",
-    },
-    {
-      id: 2,
-      image: "/images/cause2.png",
-      title: "Programs",
-    },
-    {
-      id: 3,
-      image: "/images/cause3.png",
-      title: "Celebrations and Achievements",
-    },
-    {
-      id: 4,
-      image: "/images/cause4.png",
-      title: "Sreerudra Ayurveda Alappuzha",
-    },
-    {
-      id: 5,
-      image: "/images/cause5.png",
-      title: "New Beginning",
-    }
-  ];
-
   return (
     <div className="w-full bg-white pb-24">
       {/* Hero Section */}
-      <section className="relative w-full h-[400px] flex flex-col items-center justify-center">
+      <section className="relative w-full h-[300px] md:h-[400px] flex flex-col items-center justify-center">
         {/* Background Image */}
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-center"
@@ -43,25 +17,26 @@ const Gallery = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center flex flex-col items-center">
-          <h1 className="text-white text-5xl md:text-6xl font-bold tracking-wide mb-4" style={{ color: 'white' }}>Gallery</h1>
-          <div className="flex items-center space-x-2 text-white text-sm font-medium tracking-wider">
-            <span>Home</span>
+        <div className="relative z-10 text-center flex flex-col items-center px-4">
+          <h1 className="text-white text-4xl md:text-6xl font-bold tracking-wide mb-4">Gallery</h1>
+          <div className="flex items-center space-x-2 text-white text-sm md:text-base font-medium tracking-wider">
+            <Link href="/" className="hover:text-orange-500 transition">Home</Link>
             <span>&rarr;</span>
-            <span>Gallery</span>
+            <span className="opacity-80">Gallery</span>
           </div>
         </div>
       </section>
 
       {/* Gallery Grid */}
-      <section className="page-container page-spacing py-16 md:py-24">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="page-container py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
           {galleryItems.map((item) => (
-            <div
+            <Link
               key={item.id}
-              className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+              href={`/gallery/${item.slug}`}
+              className="group flex flex-col bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="relative w-full h-[250px] shrink-0 overflow-hidden" style={{ minHeight: '250px' }}>
+              <div className="relative w-full aspect-[4/3] shrink-0 overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -69,12 +44,12 @@ const Gallery = () => {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
               </div>
-              <div className="p-6 md:p-8 flex-grow flex items-center justify-center text-center">
-                <h3 className="font-serif text-[#333333] text-[20px] md:text-[22px] font-bold leading-snug">
+              <div className="p-4 flex-grow flex items-center justify-center text-center">
+                <h3 className="font-serif text-[#333333] text-[16px] md:text-[18px] font-bold leading-snug line-clamp-2">
                   {item.title}
                 </h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

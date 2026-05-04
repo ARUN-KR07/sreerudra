@@ -66,7 +66,7 @@ export default function List() {
             <Link
               key={index}
               href={`/treatments/${item.slug}`}
-              className="bg-[#F28C18] text-white text-center py-5 px-4 rounded-[20px] font-semibold text-lg hover:scale-105 transition duration-300 shadow-md flex items-center justify-center min-h-[80px]"
+              className="bg-[#F28C18] text-white text-center py-5 px-4 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[5px] rounded-bl-[5px] font-semibold text-lg hover:scale-105 transition duration-300 shadow-md flex items-center justify-center min-h-[80px]"
             >
               {item.name}
             </Link>

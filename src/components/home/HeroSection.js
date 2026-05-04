@@ -12,12 +12,12 @@ export default function HeroSection() {
 
 
   return (
-    <main className="page-spacing">
+    <main className="page-spacing -mt-10 lg:-mt-20">
       <section className="page-container">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center text-center md:text-left">
 
           {/* LEFT CONTENT */}
-          <div>
+          <div className="md:-mt-20">
             <p className="mb-3">
               Welcome to
             </p>
@@ -26,7 +26,7 @@ export default function HeroSection() {
               SREERUDRA AYURVEDA
             </h1>
 
-            <h2 style={{ fontSize: "36px", fontWeight: "600", color: "#000000", }}>
+            <h2 style={{ fontSize: "24px", fontWeight: "600", color: "#000000", }}>
               WHERE YOUR MIND, BODY & SOUL GETS HEALED
             </h2>
 
@@ -39,12 +39,12 @@ export default function HeroSection() {
             </p>
 
             {/* BUTTONS */}
-            <div className="flex items-center gap-4 mb-8 itrms-center justify-center md:justify-start">
-              <button onClick={() => setOpen(true)} className="bg-green-700 text-white px-6 py-3 rounded-full hover:bg-green-900 transition">
+            <div className="flex items-center gap-4 mb-8 items-center justify-center md:justify-start">
+              <button onClick={() => setOpen(true)} className="bg-green-700 text-white px-8 py-4 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[5px] rounded-bl-[5px] hover:bg-green-900 transition font-bold shadow-lg">
                 Get Started
               </button>
 
-              <button className="border border-gray-400 px-6 py-3 rounded-full hover:bg-gray-100 transition">
+              <button className="border-2 border-gray-400 px-8 py-4 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[5px] rounded-bl-[5px] hover:bg-gray-100 transition font-bold">
                 Contact Us
               </button>
             </div>
@@ -85,54 +85,61 @@ export default function HeroSection() {
           </div>
 
           {/* RIGHT IMAGES */}
-          <div className="grid grid-cols-2 gap-6">
+          {/* RIGHT IMAGES - Staggered Leaf Layout */}
+          <div className="flex gap-4 md:gap-6 items-start">
 
-            {/* IMAGE 1 */}
-            <div className="relative rounded-[40px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-              <Image
-                src="/images/cause1.png"
-                alt="statue"
-                width={300}
-                height={300}
-                className="object-cover w-full h-full transition duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-500" />
+            {/* Column 1 */}
+            <div className="flex flex-col gap-4 md:gap-6 w-1/2">
+              {/* IMAGE 1 (Statue) */}
+              <div className="relative rounded-tr-[200px] rounded-bl-[200px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg h-[200px] sm:h-[300px] lg:h-[350px]">
+                <Image
+                  src="/images/cause1.png"
+                  alt="statue"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover transition duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-500" />
+              </div>
+
+              {/* IMAGE 3 (Corridor) */}
+              <div className="relative rounded-tl-[180px] rounded-br-[180px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg h-[200px] sm:h-[300px] lg:h-[350px]">
+                <Image
+                  src="/images/cause1.png"
+                  alt="hospital corridor"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover transition duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-500" />
+              </div>
             </div>
 
-            {/* IMAGE 2 */}
-            <div className="relative rounded-[40px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-              <Image
-                src="/images/cause1.png"
-                alt="building"
-                width={300}
-                height={300}
-                className="object-cover w-full h-full transition duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-500" />
-            </div>
+            {/* Column 2 - Staggered Down */}
+            <div className="flex flex-col gap-4 md:gap-6 w-1/2 mt-12 md:mt-16">
+              {/* IMAGE 2 (Solar) */}
+              <div className="relative rounded-tl-[180px] rounded-br-[180px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg h-[200px] sm:h-[300px] lg:h-[350px]">
+                <Image
+                  src="/images/cause1.png"
+                  alt="building"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover transition duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-500" />
+              </div>
 
-            {/* IMAGE 3 */}
-            <div className="relative rounded-[40px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-              <Image
-                src="/images/cause1.png"
-                alt="hospital corridor"
-                width={300}
-                height={300}
-                className="object-cover w-full h-full transition duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-500" />
-            </div>
-
-            {/* IMAGE 4 */}
-            <div className="relative rounded-[40px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-              <Image
-                src="/images/cause1.png"
-                alt="hut"
-                width={300}
-                height={300}
-                className="object-cover w-full h-full transition duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-500" />
+              {/* IMAGE 4 (Hut) */}
+              <div className="relative rounded-tr-[200px] rounded-bl-[200px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg h-[200px] sm:h-[300px] lg:h-[350px]">
+                <Image
+                  src="/images/cause1.png"
+                  alt="hut"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover transition duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-500" />
+              </div>
             </div>
 
           </div>

@@ -586,40 +586,144 @@ export const slugData = {
       ],
     },
   },
-  "arthritis-treatment2": {
+
+  "kidney-disorder": {
     hero: {
-      title: "Ayugbrvedic Treatment For Arthritis in Kerala",
+      title: "Ayurvedic Treatment For Kidney Problems in Kerala",
       description:
-        "SreeRudra Ayurveda Multispecialty Hospital in Alappuzha, Kerala specialises in holistic Ayurvedic management of arthritis. Our time-tested Panchakarma therapies and personalised herbal protocols work to reduce inflammation, restore joint mobility, and prevent further degeneration — all without the side effects of long-term conventional medication.",
-      image: "/images/spine.jpg",
-      imageAlt: "Arthritis Treatment Kerala",
+        "SreeRudra Ayurveda Multispecialty Hospital in Alappuzha, Kerala specializes in holistic Ayurvedic management of kidney disorders. Our time-tested therapies and personalised herbal protocols work to restore kidney function and improve quality of life.",
+      image: "/images/kidney1.png",
+      imageAlt: "Kidney Treatment",
     },
-  },
-  "arthritis-treatment3": {
-    hero: {
-      title: "Ayugbrvedic Treatment For Arthritis in Kerala",
-      description:
-        "SreeRudra Ayurveda Multispecialty Hospital in Alappuzha, Kerala specialises in holistic Ayurvedic management of arthritis. Our time-tested Panchakarma therapies and personalised herbal protocols work to reduce inflammation, restore joint mobility, and prevent further degeneration — all without the side effects of long-term conventional medication.",
-      image: "/images/spine.jpg",
-      imageAlt: "Arthritis Treatment Kerala",
+    risks: {
+      heading: "The Risks You Can't Ignore",
+      items: [
+        { text: "Diabetes", img: "/images/age.png" },
+        { text: "High Blood Pressure", img: "/images/weight.png" },
+        { text: "Family History", img: "/images/physic.png" },
+        { text: "Heart Disease", img: "/images/yoga.png" },
+        { text: "Smoking", img: "/images/smoke.png" },
+        { text: "Obesity", img: "/images/exercise.png" },
+      ],
+      videoSection: {
+        heading: "Treatments explained by a doctor",
+        subtext:
+          "Understand the procedure and benefits directly from our medical experts.",
+        image: "/images/doctor.png",
+      },
     },
-  },
-  "arthritis-treatment1": {
-    hero: {
-      title: "Ayugbrvedic Treatment For Arthritis in Kerala",
-      description:
-        "SreeRudra Ayurveda Multispecialty Hospital in Alappuzha, Kerala specialises in holistic Ayurvedic management of arthritis. Our time-tested Panchakarma therapies and personalised herbal protocols work to reduce inflammation, restore joint mobility, and prevent further degeneration — all without the side effects of long-term conventional medication.",
-      image: "/images/spine.jpg",
-      imageAlt: "Arthritis Treatment Kerala",
+    causes: {
+      heading: "Main Causes of Kidney Disease",
+      items: [
+        {
+          icon: "Activity",
+          title: "Diabetes",
+          description: "High blood sugar can damage the blood vessels in your kidneys over time.",
+        },
+        {
+          icon: "TrendingUp",
+          title: "High Blood Pressure",
+          description: "Uncontrolled hypertension can lead to kidney failure by damaging arteries.",
+        },
+        {
+          icon: "Activity",
+          title: "Glomerulonephritis",
+          description: "Inflammation of the kidney's filtering units (glomeruli).",
+        },
+        {
+          icon: "Droplets",
+          title: "Polycystic Kidney Disease",
+          description: "An inherited disorder where clusters of cysts develop in the kidneys.",
+        },
+      ],
     },
-  },
-  "arthritis-treatment7": {
-    hero: {
-      title: "Ayurvedic Treatment For Arthritis in Kerala",
+    conditionDetail: {
+      image: "/images/kidney_detail.png",
+      heading: "Ayurvedic Treatment For Kidney Disease In Kerala",
       description:
-        "SreeRudra Ayurveda Multispecialty Hospital in Alappuzha, Kerala specialises in holistic Ayurvedic management of arthritis. Our time-tested Panchakarma therapies and personalised herbal protocols work to reduce inflammation, restore joint mobility, and prevent further degeneration — all without the side effects of long-term conventional medication.",
-      image: "/images/spine.jpg",
-      imageAlt: "Arthritis Treatment Kerala",
+        "Ayurveda offers a unique approach to kidney health by focusing on balancing the doshas and rejuvenating the renal tissues. Our treatments include internal medications, detox therapies, and specific dietary regimens tailored to the stage of kidney disease.",
+    },
+    outcomes: {
+      heading: "Outcomes Of Kidney Disease",
+      description: "Effective Ayurvedic management can lead to significant improvements in kidney function markers, reduced dependency on dialysis in some cases, and overall better health and vitality. Our patients often report improved energy levels and a reduction in systemic symptoms.",
+      cta: "Consult with our specialists"
+    },
+    diagnosis: {
+      heading: "Diagnosis & Treatment Procedures",
+      leftCard: {
+        title: "Tests Conducted for Detection",
+        items: [
+          {
+            title: "Urine Protein Test",
+            desc: "This test measures the amount of protein in your urine. Healthy kidneys remove protein from urine, but damaged kidneys may allow protein to leak into the urine, indicating the start of kidney disease."
+          },
+          {
+            title: "Blood Creatinine Test",
+            desc: "This test measures the level of creatinine in your blood. High creatinine levels indicate kidney damage. The glomerular filtration rate (GFR) can be calculated using these levels."
+          },
+          {
+            title: "Imaging Tests",
+            desc: "Ultrasound or Computed Tomography (CT) scans create pictures of the kidneys and urinary tract to detect any physical abnormalities like tumors or stones."
+          },
+          {
+            title: "Kidney Biopsy",
+            desc: "In some cases, a small sample of kidney tissue is removed and examined under a microscope to determine the specific cause of the kidney problem."
+          }
+        ]
+      },
+      rightCard: {
+        title: "Some Procedures Involved In The Treatment",
+        items: [
+          {
+            title: "Doshahara Lepa and Dhara",
+            desc: "Treatments administered locally or whole-body using suitable medicaments to reduce swelling, pain, and discoloration."
+          },
+          {
+            title: "Kledasoshana Massage",
+            desc: "A full-body massage performed using poultices made from dry powdered drugs for therapeutic purposes."
+          },
+          {
+            title: "Vrikaroga Special Diet",
+            desc: "A balanced pathya diet avoiding oily/spicy foods and maintaining electrolyte balance (Sodium, Potassium, Calcium)."
+          },
+          {
+            title: "Vrikarogaharavihara",
+            desc: "Lifestyle modifications including avoiding excessive sweating, strenuous exercise, and physical exertion during treatment."
+          }
+        ]
+      }
+    },
+    finalOutcomes: {
+      heading: "Final Outcomes",
+      description: "Our goal is to provide a holistic recovery path that addresses both the physical symptoms and the root cause of the disorder. With consistent therapy and lifestyle changes, long-term kidney health is achievable.",
+      cta: "Consult with our specialists"
+    },
+    faqs: {
+      heading: "Frequently asked questions",
+      image: "/images/faq.png",
+      items: [
+        {
+          question: "Can Ayurveda help in chronic kidney disease (CKD)?",
+          answer: "Yes, Ayurveda can help manage CKD by slowing progression and improving kidney function markers."
+        },
+        {
+          question: "Is there any specific diet for kidney patients?",
+          answer: "Yes, a low-sodium, low-protein, and controlled potassium/phosphorus diet is usually recommended."
+        }
+      ],
+    },
+    ourTreatments: {
+      heading: "Our Treatment",
+      tabs: ["Lifestyle", "Pain & Ortho", "Neuro", "Women & Wellness", "Specialized Care"],
+      cards: [
+        { title: "Kidney Care", img: "treatment1.png" },
+        { title: "Lung Disorders", img: "treatment2.png" },
+        { title: "Liver Cirrhosis", img: "treatment3.png" },
+        { title: "Spinal Problem", img: "treatment4.png" },
+        { title: "Mental Disorder", img: "treatment1.png" },
+        { title: "Mental Disorder", img: "treatment1.png" },
+      ],
     },
   },
 };
+
