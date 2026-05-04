@@ -14,7 +14,7 @@ export default function DoctorSection() {
                 <Image src="/images/cause2.png" alt="Dr. Vishnu Nampoothiry" fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover" />
               </div>
               <div className="text-center text-gray-800">
-                <h3 className="font-bold text-xl mb-1">Dr. Vishnu Nampoothiry</h3>
+                <p className="font-bold text-xl mb-1 text-gray-800">Dr. Vishnu Nampoothiry</p>
                 <p className="text-[#6D6D6D] text-sm">MD (Ayurveda), PGDYT and MSc Yoga</p>
                 <p className="text-[#6D6D6D] text-xs font-semibold mt-2">Senior Medical Officer, Alappuzha</p>
               </div>

@@ -63,7 +63,7 @@ export default function OurTreatments() {
               <div className="flex flex-col items-left">
                 <Link
                   href={`/treatments/${slug}`}
-                  className="w-full block rounded-3xl overflow-hidden shadow-2xl bg-white transform hover:scale-105 transition duration-300"
+                  className="w-full block rounded-tl-[80px] rounded-br-[80px] rounded-tr-[10px] rounded-bl-[10px] overflow-hidden shadow-2xl bg-white transform hover:scale-105 transition duration-300"
                 >
                   {/* BIGGER CARD */}
                   <div className="h-[300px] sm:h-[420px] w-full">
@@ -85,7 +85,7 @@ export default function OurTreatments() {
       </div>
 
       {/* CUSTOM ARROWS */}
-      <style jsx global>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .slick-prev,
         .slick-next {
           width: 60px !important;
@@ -108,14 +108,13 @@ export default function OurTreatments() {
           right: -40px !important;
         }
 
-        /* Hide arrows on mobile to prevent horizontal overflow */
         @media (max-width: 767px) {
           .slick-prev,
           .slick-next {
             display: none !important;
           }
         }
-      `}</style>
+      ` }} />
     </div>
   );
 }

@@ -44,9 +44,9 @@ export default function TestimonialSection() {
                 {item.text}
               </p>
 
-              <h3 className="mt-8 text-[40px] font-semibold text-black">
+              <p className="mt-8 text-[40px] font-semibold text-black">
                 {item.name}
-              </h3>
+              </p>
 
               <p className="text-black">{item.role}</p>
             </div>

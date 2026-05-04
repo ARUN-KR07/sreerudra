@@ -6,12 +6,12 @@ import ExperienceSection from "@/components/home/ExperienceSection";
 import OurTreatments from "@/components/home/OurTreatments";
 import AyurvedaSection from "@/components/home/AyurvedaSection";
 import ServiceSection from "@/components/home/ServiceSection";
-import ConsultationSection from "@/components/home/ConsultationSection";
 import TestimonialSection from "@/components/home/TestimonialSection";
 import TreatmentsSection from "@/components/home/TreatmentsSection";
 import GallerySection from "@/components/home/GallerySection";
 import LatestUpdates from "@/components/home/LatestUpdates";
 import OurTreatments2 from "@/components/home/ourtreatments2";
+import ConsultationForm from "@/components/form/ConsultationForm";
 
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
       <OurTreatments2 />
       <AyurvedaSection />
       <ServiceSection />
-      <ConsultationSection />
+      <ConsultationForm />
       <TestimonialSection />
       <TreatmentsSection />
       <GallerySection />

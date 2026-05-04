@@ -47,19 +47,19 @@ const Testimonials = () => {
 
       {/* Toggle Buttons */}
       <section className="page-container mt-16 flex justify-center">
-        <div className="flex">
+        <div className="flex rounded-tl-[30px] rounded-br-[30px] rounded-tr-[5px] rounded-bl-[5px] overflow-hidden border-2 border-[#008439]">
           <button 
             onClick={() => setActiveTab('video')}
-            className={`px-12 py-3 text-white font-medium text-sm transition-all duration-300 bg-[#f59720] ${
-              activeTab === 'video' ? 'opacity-100 shadow-md transform scale-105 z-10' : 'opacity-60 hover:opacity-80'
+            className={`px-10 md:px-16 py-3 font-bold text-sm md:text-base transition-all duration-300 ${
+              activeTab === 'video' ? 'bg-[#008439] text-white' : 'bg-white text-[#008439] hover:bg-green-50'
             }`}
           >
             Video
           </button>
           <button 
             onClick={() => setActiveTab('photo')}
-            className={`px-12 py-3 text-white font-medium text-sm transition-all duration-300 bg-[#008439] ${
-              activeTab === 'photo' ? 'opacity-100 shadow-md transform scale-105 z-10' : 'opacity-60 hover:opacity-80'
+            className={`px-10 md:px-16 py-3 font-bold text-sm md:text-base transition-all duration-300 ${
+              activeTab === 'photo' ? 'bg-[#008439] text-white' : 'bg-white text-[#008439] hover:bg-green-50'
             }`}
           >
             Photo

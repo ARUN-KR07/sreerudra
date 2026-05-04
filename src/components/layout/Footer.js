@@ -1,6 +1,8 @@
 "use client";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
+
 
 
 export default function Footer() {
@@ -13,7 +15,7 @@ export default function Footer() {
       >
 
         {/* COLUMN 1 */}
-        <div className="space-y-5 lg:border-r border-[#004e22]/30 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="space-y-4 lg:border-r border-[#004e22]/30 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* LOGOS */}
           <div className="flex items-center justify-center lg:justify-start gap-2">
@@ -50,26 +52,26 @@ export default function Footer() {
         </div>
 
         {/* COLUMN 2 */}
-        <div className="space-y-5 lg:border-r border-[#004e22]/30 lg:px-4 text-center lg:text-left">
+        <div className="space-y-4 lg:border-r border-[#004e22]/30 lg:px-4 text-center lg:text-left">
 
           <h2 className="text-[20px] sm:text-[22px] lg:text-[30px] font-semibold text-black">
             Contact us
           </h2>
 
-          <div className="space-y-2 text-[14px] sm:text-[16px] lg:text-[22px] leading-6 sm:leading-7">
+          <div className="space-y-2 text-[14px] sm:text-[16px] lg:text-[24px] leading-6 sm:leading-7 text-black">
             <p className="font-bold">Alappuzha</p>
             <p>Kaithavana,</p>
             <p>Alappuzha – 688003</p>
-            <p className="underline mt-1">+91 477 2266778</p>
-            <p className="underline">+91 98479 48218</p>
+            <p className="underline mt-1 hover:text-[#ED8916] cursor-pointer">+91 477 2266778</p>
+            <p className="underline hover:text-[#ED8916] cursor-pointer">+91 98479 48218</p>
           </div>
 
-          <div className="space-y-2 text-[14px] sm:text-[16px] lg:text-[22px] leading-6 sm:leading-7">
+          <div className="space-y-2 text-[14px] sm:text-[16px] lg:text-[24px] leading-6 sm:leading-7 text-black">
             <p className="font-bold">Trivandrum</p>
             <p>Kallampally, Sreekariyam,</p>
             <p>Trivandrum – 695017</p>
-            <p className="underline mt-1">+91 471 2590045</p>
-            <p className="underline">+91 95677 48218</p>
+            <p className="underline mt-1 hover:text-[#ED8916] cursor-pointer">+91 471 2590045</p>
+            <p className="underline hover:text-[#ED8916] cursor-pointer">+91 95677 48218</p>
           </div>
 
           {/* EMAIL */}
@@ -85,17 +87,42 @@ export default function Footer() {
             Quick Links
           </h2>
 
-          <div className="flex flex-col gap-2 text-[14px] sm:text-[16px] lg:text-[22px]">
-            <p className="hover:text-black cursor-pointer">Panchakarma</p>
-            <p className="hover:text-black cursor-pointer">Testimonials</p>
-            <p className="hover:text-black cursor-pointer">Gallery</p>
-            <p className="hover:text-black cursor-pointer">Blogs</p>
-            <p className="hover:text-black cursor-pointer">FAQs</p>
-            <p className="hover:text-black cursor-pointer"><Link href="/terms-conditions">Terms & Conditions</Link></p>
-            <p className="hover:text-black cursor-pointer"><Link href="/return-refund-policy">Return & Refund Policy</Link></p>
-            <p className="hover:text-black cursor-pointer"><Link href="/privacy-policy">Privacy Policy</Link></p>
+          <div className="flex flex-col gap-2 text-[16px] sm:text-[18px] lg:text-[20px] font-[poppins]">
+
+            <Link href="/panchakarma" className="text-black transition-all duration-300 hover:text-[#ED8916] hover:drop-shadow-[0_0_8px_rgba(237,137,22,0.1)]">
+              <p>Panchakarma</p>
+            </Link>
+
+            <Link href="/testimonials" className="text-black transition-all duration-300 hover:text-[#ED8916] hover:drop-shadow-[0_0_8px_rgba(237,137,22,0.1)]">
+              <p>Testimonials</p>
+            </Link>
+
+            <Link href="/gallery" className="text-black transition-all duration-300 hover:text-[#ED8916] hover:drop-shadow-[0_0_8px_rgba(237,137,22,0.1)]">
+              <p>Gallery</p>
+            </Link>
+
+            <Link href="/blog" className="text-black transition-all duration-300 hover:text-[#ED8916] hover:drop-shadow-[0_0_8px_rgba(237,137,22,0.1)]">
+              <p>Blogs</p>
+            </Link>
+
+            <Link href="/faq" className="text-black transition-all duration-300 hover:text-[#ED8916] hover:drop-shadow-[0_0_8px_rgba(237,137,22,0.1)]">
+              <p>FAQs</p>
+            </Link>
+
+            <Link href="/terms-conditions" className="text-black transition-all duration-300 hover:text-[#ED8916] hover:drop-shadow-[0_0_8px_rgba(237,137,22,0.1)]">
+              <p>Terms & Conditions</p>
+            </Link>
+
+            <Link href="/return-refund-policy" className="text-black transition-all duration-300 hover:text-[#ED8916] hover:drop-shadow-[0_0_8px_rgba(237,137,22,0.1)]">
+              <p>Return & Refund Policy</p>
+            </Link>
+
+            <Link href="/privacy-policy" className="text-black transition-all duration-300 hover:text-[#ED8916] hover:drop-shadow-[0_0_8px_rgba(237,137,22,0.1)]">
+              <p>Privacy Policy</p>
+            </Link>
           </div>
         </div>
+
 
         {/* COLUMN 4 */}
         <div className="space-y-4 lg:px-4 text-center lg:text-left">
@@ -104,13 +131,26 @@ export default function Footer() {
             Gallery
           </h2>
 
+          <div className="grid grid-cols-3 gap-2 max-w-[240px] mx-auto lg:mx-0">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div key={i} className="aspect-square relative rounded-md overflow-hidden hover:scale-110 transition duration-300">
+                <Image
+                  src={`/images/cause${i}.png`}
+                  alt={`Gallery ${i}`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+
         </div>
 
       </div>
 
       {/* COPYRIGHT */}
-      <div className="text-center pt-5 pb-4 text-black text-[13px] sm:text-[14px] lg:text-[18px]">
-        © 2025 All Rights Reserved by Sreerudra Ayurveda.
+      <div className="border-t border-[#004e22]/20 py-4 text-center text-[12px] sm:text-[14px] text-[#004e22]/60">
+        © 2024 Sreerudra Ayurveda. All rights reserved.
       </div>
 
     </footer>

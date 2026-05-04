@@ -6,24 +6,28 @@
   }
 
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-karla), "Poppins", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-playfair {
+    font-family: var(--font-playfair), serif;
   }
 
   h1 {
-    font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 46px;
     color: #008439;
   }
 
   h2 {
-    font-family: 'Playfair Display', serif;
     font-size: 40px;
     font-weight: 700;
   }
 
   h3 {
-    font-family: 'Playfair Display', serif;
     font-size: 30px;
     font-weight: 700;
   }

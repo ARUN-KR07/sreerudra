@@ -72,11 +72,11 @@ const BlogDetail = ({ blog }) => {
           </div>
 
           {/* Sidebar (Right) */}
-          <div className="lg:w-1/3">
+          <div className="lg:w-1/3 lg:sticky lg:top-24 h-fit self-start">
             {/* Latest Posts */}
             <div className="mb-12">
               <h3 className="text-xl font-bold mb-6 pb-2 border-b-2 border-green-600 inline-block">Latest Posts</h3>
-              <div className="space-y-6">
+              <div className="space-y-2">
                 {latestPosts.map((post) => (
                   <Link key={post.id} href={`/blog/${post.slug}`} className="flex gap-4 group">
                     <div className="relative w-24 h-20 flex-shrink-0 overflow-hidden rounded-lg">
@@ -99,7 +99,7 @@ const BlogDetail = ({ blog }) => {
             </div>
 
             {/* CTA Box */}
-            <div className="bg-[#004e22] rounded-[40px] p-10 text-center text-white relative overflow-hidden">
+            <div className="bg-[#004e22] rounded-[40px] p-5 text-center text-white relative overflow-hidden">
               <div className="relative z-10">
                 <h3 className="text-3xl font-bold mb-4 text-white">
                   Consult with Your Doctor
