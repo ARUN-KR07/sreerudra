@@ -109,7 +109,7 @@ const AboutUs = () => {
           <div className="sa fade-right flex justify-center lg:justify-start relative lg:-mr-[50vw]">
             <div className="bg-white rounded-[80px] lg:rounded-l-[150px] lg:rounded-r-none p-6 pb-12 w-[320px] sm:w-[380px] lg:w-[50vw] shadow-2xl relative z-20 flex flex-col items-center lg:pt-12 transition-shadow duration-300 hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)]">
               <div className="relative w-full max-w-[300px] aspect-[4/5] rounded-t-[100px] rounded-b-[80px] overflow-hidden mb-6 transition-transform duration-500 hover:scale-[1.03]">
-                <Image src="/images/cause1.png" alt="Dr. Maya Lakshmi Vishnu Nampoothiry" fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover" />
+                <Image src="/images/d2.webp" alt="Dr. Maya Lakshmi Vishnu Nampoothiry" fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover" />
               </div>
               <div className="text-center text-gray-800">
                 <h3 className="font-bold text-[24px] mb-1" style={{ fontFamily: 'Playfair Display' }}>Dr. Maya Lakshmi Vishnu Nampoothiry</h3>
@@ -129,7 +129,7 @@ const AboutUs = () => {
           <div className="sa fade-left flex justify-center lg:justify-end relative lg:-ml-[50vw] order-2 lg:order-1 mt-8 lg:mt-0">
             <div className="bg-white rounded-[80px] lg:rounded-r-[150px] lg:rounded-l-none p-6 pb-12 w-[320px] sm:w-[380px] lg:w-[50vw] shadow-2xl relative z-20 flex flex-col items-center lg:pt-12 transition-shadow duration-300 hover:shadow-[0_25px_60px_rgba(0,0,0,0.4)]">
               <div className="relative w-full max-w-[300px] aspect-[4/5] rounded-t-[100px] rounded-b-[80px] overflow-hidden mb-6 transition-transform duration-500 hover:scale-[1.03]">
-                <Image src="/images/cause2.png" alt="Dr. Vishnu Nampoothiry" fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover" />
+                <Image src="/images/d1.webp" alt="Dr. Vishnu Nampoothiry" fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover" />
               </div>
               <div className="text-center text-gray-800">
                 <h3 className="font-bold text-[24px] mb-1" style={{ fontFamily: 'Playfair Display' }}>Dr. Vishnu Nampoothiry</h3>
@@ -243,7 +243,7 @@ const AboutUs = () => {
             { name: "Dr. Muhammed Hashim", title: "BAMS, MD (Ayurveda)\nSenior Consultant", img: "/images/cause5.png" }
           ].map((doc, i) => (
             <div key={i} className="sa fade-up flex flex-col items-center text-center group cursor-pointer" style={{ transitionDelay: `${i * 100}ms` }}>
-              <div className="relative w-[280px] h-[280px] rounded-[20px] mb-6 overflow-hidden shadow-lg border border-gray-100 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+              <div className="relative w-full aspect-square max-w-[280px] rounded-[20px] mb-6 overflow-hidden shadow-lg border border-gray-100 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
                 <Image src={doc.img} alt={doc.name} fill sizes="200px" className="object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="font-bold text-[22px] mb-1 transition-colors duration-200 group-hover:text-green-800" style={{ fontFamily: 'Playfair Display' }}>{doc.name}</h3>
@@ -264,7 +264,7 @@ const AboutUs = () => {
             { name: "Dr. Jayakrishnan Nampoothiry", title: "BAMS, MD (Ayu), Professor", img: "/images/cause7.png" }
           ].map((doc, i) => (
             <div key={i} className="sa fade-up flex flex-col items-center text-center group cursor-pointer" style={{ transitionDelay: `${i * 100}ms` }}>
-              <div className="relative w-[280px] h-[280px] rounded-[30px] mb-6 overflow-hidden shadow-lg border border-gray-100 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+              <div className="relative w-full aspect-square max-w-[280px] rounded-[30px] mb-6 overflow-hidden shadow-lg border border-gray-100 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
                 <Image src={doc.img} alt={doc.name} fill sizes="250px" className="object-cover transition-transform duration-500 group-hover:scale-105" />
               </div>
               <h3 className="font-bold text-[22px] mb-1 transition-colors duration-200 group-hover:text-green-800" style={{ fontFamily: 'Playfair Display' }}>{doc.name}</h3>

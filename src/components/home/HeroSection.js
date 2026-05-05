@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import PopupForm from "@/components/form/PopupForm";
 
@@ -44,9 +45,11 @@ export default function HeroSection() {
                 Get Started
               </button>
 
-              <button className="border-2 border-gray-400 px-8 py-4 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[5px] rounded-bl-[5px] hover:bg-gray-100 transition font-bold">
-                Contact Us
-              </button>
+              <Link href="/contact">
+                <button className="border-2 border-gray-400 px-8 py-4 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[5px] rounded-bl-[5px] hover:bg-gray-100 transition font-bold">
+                  Contact Us
+                </button>
+              </Link>
             </div>
 
             {/* USERS */}
@@ -93,7 +96,7 @@ export default function HeroSection() {
               {/* IMAGE 1 (Statue) */}
               <div className="relative rounded-tr-[200px] rounded-bl-[200px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg h-[200px] sm:h-[300px] lg:h-[350px]">
                 <Image
-                  src="/images/cause1.png"
+                  src="/images/h1.webp"
                   alt="statue"
                   fill
                   sizes="(max-width: 768px) 50vw, 25vw"
@@ -105,7 +108,7 @@ export default function HeroSection() {
               {/* IMAGE 3 (Corridor) */}
               <div className="relative rounded-tl-[180px] rounded-br-[180px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg h-[200px] sm:h-[300px] lg:h-[350px]">
                 <Image
-                  src="/images/cause1.png"
+                  src="/images/h3.webp"
                   alt="hospital corridor"
                   fill
                   sizes="(max-width: 768px) 50vw, 25vw"
@@ -120,7 +123,7 @@ export default function HeroSection() {
               {/* IMAGE 2 (Solar) */}
               <div className="relative rounded-tl-[180px] rounded-br-[180px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg h-[200px] sm:h-[300px] lg:h-[350px]">
                 <Image
-                  src="/images/cause1.png"
+                  src="/images/h2.webp"
                   alt="building"
                   fill
                   sizes="(max-width: 768px) 50vw, 25vw"
@@ -132,7 +135,7 @@ export default function HeroSection() {
               {/* IMAGE 4 (Hut) */}
               <div className="relative rounded-tr-[200px] rounded-bl-[200px] overflow-hidden group cursor-pointer transition duration-300 hover:-translate-y-2 hover:shadow-xl shadow-lg h-[200px] sm:h-[300px] lg:h-[350px]">
                 <Image
-                  src="/images/cause1.png"
+                  src="/images/h4.webp"
                   alt="hut"
                   fill
                   sizes="(max-width: 768px) 50vw, 25vw"

@@ -33,7 +33,6 @@ export default function RootLayout({ children }) {
         <Footer />
 
         {/* 🔥 TOAST CONTAINER */}
-        import toast, {Toaster} from "react-hot-toast";
 
         <Toaster
           position="top-right"

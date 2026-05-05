@@ -90,7 +90,7 @@ export default function AyurvedaSection() {
             {/* CENTER IMAGE */}
             <div className="hidden lg:flex items-start justify-center">
               <div className="relative w-full lg:w-[500px] h-auto lg:h-[500px] flex items-start justify-center">
-                <div className="hidden lg:block absolute rounded-full bg-[#e9dccd]" style={{ width: "500px", height: "500px", top: "35%", left: "50%", transform: "translate(-50%, -50%)" }} />
+                <div className="hidden xl:block absolute rounded-full bg-[#e9dccd]" style={{ width: "500px", height: "500px", top: "35%", left: "50%", transform: "translate(-50%, -50%)" }} />
                 <div className="w-[360px] h-[360px] bg-orange-500 rounded-full flex items-start justify-center z-10">
                   <Image
                     src="/images/med.webp"

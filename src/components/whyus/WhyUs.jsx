@@ -1,7 +1,13 @@
+"use client"
+
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import PopupForm from "@/components/form/PopupForm";
+import { useState } from "react";
 
 const WhyUs = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -50,7 +56,7 @@ const WhyUs = () => {
                 This Ayurveda retreat in Kerala provides accommodation, treatment, medicines and prepare different types of food specified by the doctor for all its in-patient based on the treatment category and food specification.
               </p>
             </div>
-            <button className="bg-[#f59720] hover:bg-[#d8841a] text-white px-8 py-3 rounded-md font-medium transition-colors">
+            <button onClick={() => setOpen(true)} className="bg-[#f59720] hover:bg-[#d8841a] text-white px-8 py-3 rounded-tl-[20px] rounded-br-[20px]  font-medium transition-colors">
               Book an Appointment
             </button>
           </div>
@@ -139,10 +145,13 @@ const WhyUs = () => {
               All the matters in the universe is made up of five elements such as Earth, Water, Fire, Wind and space or void or ether. Earth represents the solid heavy state; water represents the free-flowing liquid state. Since the body is also an object, it is also made up of five elements. The health is preserved only when these five elements comprising our body are in homogeneous state and equilibrium. Our food and lifestyle has an impact on this delicate balance of five elements. However, these foodstuffs and lifestyles have effects on the body.
             </p>
           </div>
-          <button className="bg-[#f59720] hover:bg-[#d8841a] text-white px-8 py-3 rounded-md font-medium transition-colors">
-            Consult Us
-          </button>
+          <Link href="/contact">
+            <button className="bg-[#f59720] hover:bg-[#d8841a] text-white px-8 py-3 rounded-tl-[20px] rounded-br-[20px]  font-medium transition-colors">
+              Consult Us
+            </button>
+          </Link>
         </div>
+        <PopupForm open={open} setOpen={setOpen} />
       </section>
     </div>
   );

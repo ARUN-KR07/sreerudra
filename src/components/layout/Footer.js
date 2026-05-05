@@ -6,12 +6,19 @@ import Image from "next/image";
 
 
 export default function Footer() {
+
+  const socialLinks = [
+    { icon: FaFacebookF, url: "https://www.facebook.com/sreerudraayurveda/" },
+    { icon: FaInstagram, url: "https://www.instagram.com/sreerudra.ayurveda_official" },
+    { icon: FaTwitter, url: "https://x.com/sreerudra_ayur" },
+    { icon: FaYoutube, url: "https://www.youtube.com/@sreerudraayurvedahospital" },
+  ];
   return (
     <footer className="relative bg-white text-[#004e22] pt-10 pb-20 px-4 sm:px-6 md:px-10 lg:px-16 font-[Karla]">
 
       {/* GRID */}
       <div
-        className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[1.2fr_1.5fr_1.2fr_0.9fr] gap-8 md:gap-10 border-b border-[#004e22]/30 pb-10 md:pb-12"
+        className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 "
       >
 
         {/* COLUMN 1 */}
@@ -22,12 +29,13 @@ export default function Footer() {
             <img
               src="/images/logo3.png"
               alt="logo"
-              className="w-[130px] sm:w-[160px] lg:w-[160px] h-auto object-contain"
+              className="w-[120px] sm:w-[140px] md:w-[130px] lg:w-[110px] xl:w-[140px] h-auto object-contain"
             />
+
             <img
               src="/images/logo1.png"
               alt="logo"
-              className="w-[70px] sm:w-[80px] lg:w-[103px] h-auto object-contain"
+              className="w-[60px] sm:w-[70px] md:w-[65px] lg:w-[55px] xl:w-[90px] h-auto object-contain"
             />
           </div>
 
@@ -40,14 +48,20 @@ export default function Footer() {
 
           {/* SOCIAL */}
           <div className="flex gap-3 pt-2 flex-wrap justify-center lg:justify-start">
-            {[FaFacebookF, FaInstagram, FaTwitter, FaYoutube].map((Icon, i) => (
-              <div
-                key={i}
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#0a7a33] flex items-center justify-center text-white text-sm sm:text-lg cursor-pointer hover:bg-black transition"
-              >
-                <Icon />
-              </div>
-            ))}
+            {socialLinks.map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <Link
+                  key={i}
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#0a7a33] flex items-center justify-center text-white text-sm sm:text-lg cursor-pointer hover:bg-black transition"
+                >
+                  <Icon />
+                </Link>
+              );
+            })}
           </div>
         </div>
 
@@ -134,12 +148,15 @@ export default function Footer() {
           <div className="grid grid-cols-3 gap-2 max-w-[240px] mx-auto lg:mx-0">
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <div key={i} className="aspect-square relative rounded-md overflow-hidden hover:scale-110 transition duration-300">
-                <Image
-                  src={`/images/cause${i}.png`}
-                  alt={`Gallery ${i}`}
-                  fill
-                  className="object-cover"
-                />
+                <Link href="/gallery">
+
+                  <Image
+                    src={`/images/cause${i}.png`}
+                    alt={`Gallery ${i}`}
+                    fill
+                    className="object-cover"
+                  />
+                </Link>
               </div>
             ))}
           </div>

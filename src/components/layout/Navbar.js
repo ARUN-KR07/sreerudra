@@ -23,10 +23,10 @@ export default function Navbar() {
       <div className="max-w-[1400px] mx-auto px-4 md:px-10 flex items-center justify-between">
 
         {/* 🌿 Logos */}
-        <div className="flex items-center h-[102px] shrink-0">
+        <div className="flex items-center h-[102px] shrink-0 gap-10">
           <img
             src="/images/logo2.png"
-            className="w-[140px] lg:w-[166px] h-[102px] object-contain"
+            className="w-[140px] lg:w-[166px] h-[102px] object-contain scale-170 translate-y-1"
             alt="Logo 2"
           />
           <img
@@ -54,7 +54,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3 shrink-0">
           <Link
             href="/contact"
-            className="hidden lg:block bg-[#ED8916] text-[16px] xl:text-[18px] 2xl:text-[24px] text-white px-4 2xl:px-5 py-2 rounded-tl-[20px] rounded-br-[20px] rounded-tr-[4px] rounded-bl-[4px] shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 hover:scale-[1.03] active:scale-95 font-Poppins whitespace-nowrap">
+            className="hidden lg:block bg-[#ED8916] text-[14px] xl:text-[16px] 2xl:text-[20px] text-white px-4 2xl:px-5 py-2 rounded-tl-[20px] rounded-br-[20px] shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 hover:scale-[1.03] active:scale-95 font-Poppins whitespace-nowrap">
 
             Contact Us
           </Link>

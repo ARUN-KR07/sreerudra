@@ -1,5 +1,6 @@
 "use client";
 
+import { Quote } from "lucide-react";
 import Slider from "react-slick";
 
 export default function TestimonialSection() {
@@ -32,9 +33,7 @@ export default function TestimonialSection() {
       <div className="max-w-4xl mx-auto text-center">
 
         {/* QUOTE ICON */}
-        <div className="text-[150px] text-[#9fb4aa] leading-none ">
-          “
-        </div>
+        <Quote className="w-[120px] h-[120px] text-[#9fb4aa] mx-auto text-center mb-10" />
 
         {/* SLIDER */}
         <Slider {...settings}>

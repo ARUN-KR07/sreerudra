@@ -39,7 +39,7 @@ export default function List() {
 
   return (
     <div className="w-full">
-      
+
       {/* HERO */}
       <div className="relative w-full h-[220px] md:h-[400px]">
         <Image
@@ -61,14 +61,29 @@ export default function List() {
       {/* TILES */}
       <div className="bg-[#2F6B3B] py-12 px-4 md:px-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          
+
           {treatments.map((item, index) => (
             <Link
               key={index}
               href={`/treatments/${item.slug}`}
-              className="bg-[#F28C18] text-white text-center py-5 px-4 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[5px] rounded-bl-[5px] font-semibold text-lg hover:scale-105 transition duration-300 shadow-md flex items-center justify-center min-h-[80px]"
+              className="group relative bg-[#F28C18] text-white text-center py-5 px-4 
+      rounded-tl-[30px] rounded-br-[30px] rounded-tr-[5px] rounded-bl-[5px] 
+      font-semibold text-lg shadow-md flex items-center justify-center min-h-[80px] 
+      overflow-hidden transition-all duration-300 
+      hover:-translate-y-2"
             >
-              {item.name}
+              {/* Shine left-to-right on hover-in, snaps back instantly on hover-out */}
+              <span
+                className="absolute inset-0 
+        -translate-x-full group-hover:translate-x-full 
+        duration-0 group-hover:duration-1000 
+        ease-in-out transition-transform
+        bg-gradient-to-r from-transparent via-white/40 to-transparent"
+              />
+
+              <span className="relative z-10">
+                {item.name}
+              </span>
             </Link>
           ))}
 

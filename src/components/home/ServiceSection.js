@@ -12,7 +12,7 @@ export default function ServiceSection() {
           <div className="flex gap-6 items-end justify-center md:justify-start flex-wrap md:flex-nowrap">
 
             {/* LEFT IMAGE */}
-            <div className="relative w-full sm:w-[45%] md:w-[290px] h-[320px] sm:h-[380px] md:h-[420px] overflow-hidden rounded-tr-[160px] rounded-bl-[160px] group transition duration-500 hover:-translate-y-12 hover:shadow-2xl md:translate-y-[-20px]">
+            <div className="relative w-full sm:w-[45%] md:w-[290px] h-[320px] sm:h-[380px] md:h-[420px] overflow-hidden rounded-tr-[160px] rounded-bl-[160px] group transition duration-500 hover:-translate-y-12 hover:shadow-2xl md:translate-y-[-28px]">
 
               <Image
                 src="/images/cause1.png"
@@ -27,7 +27,7 @@ export default function ServiceSection() {
             </div>
 
             {/* RIGHT IMAGE */}
-            <div className="relative w-full sm:w-[45%] md:w-[290px] h-[320px] sm:h-[380px] md:h-[420px] overflow-hidden rounded-tl-[160px] rounded-br-[160px] group transition duration-500 hover:-translate-y-3 hover:shadow-2xl md:translate-y-12">
+            <div className="relative w-full sm:w-[45%] md:w-[290px] h-[320px] sm:h-[380px] md:h-[420px] overflow-hidden rounded-tl-[160px] rounded-br-[160px] group transition duration-500 hover:-translate-y-[-56px] hover:shadow-2xl md:translate-y-24">
 
               <Image
                 src="/images/cause1.png"

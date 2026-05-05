@@ -10,8 +10,8 @@ export default function DoctorSection() {
         <div className="page-container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center lg:justify-end relative lg:-ml-[50vw] order-2 lg:order-1 mt-8 lg:mt-0">
             <div className="bg-white rounded-[80px] lg:rounded-r-[150px] lg:rounded-l-none p-6 pb-12 w-[320px] sm:w-[380px] lg:w-[50vw] shadow-2xl relative z-20 flex flex-col items-center lg:pt-12">
-              <div className="relative w-full max-w-[300px] aspect-[4/5] rounded-t-[100px] rounded-b-[80px] overflow-hidden mb-6">
-                <Image src="/images/cause2.png" alt="Dr. Vishnu Nampoothiry" fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover" />
+              <div className="relative w-full max-w-[360px] aspect-[4/5] rounded-t-[100px] rounded-b-[80px] overflow-hidden mb-6">
+                <Image src="/images/d1.webp" alt="Dr. Vishnu Nampoothiry" fill sizes="(max-width: 768px) 100vw, 400px" className="object-cover" />
               </div>
               <div className="text-center text-gray-800">
                 <p className="font-bold text-xl mb-1 text-gray-800">Dr. Vishnu Nampoothiry</p>

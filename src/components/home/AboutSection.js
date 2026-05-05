@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function AboutSection() {
   return (
     <main className="page-spacing">
@@ -33,9 +35,11 @@ export default function AboutSection() {
           </p>
 
           {/* Button */}
-          <button className="border border-gray-900 px-6 py-3 rounded-tl-[20px] rounded-br-[20px]  hover:bg-gray-100 transition">
-            Discover More
-          </button>
+          <Link href="/about">
+            <button className="border border-gray-900 px-6 py-3 rounded-tl-[20px] rounded-br-[20px]  hover:bg-gray-100 transition">
+              Discover More
+            </button>
+          </Link>
         </div>
       </section>
     </main>

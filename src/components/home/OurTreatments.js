@@ -85,7 +85,8 @@ export default function OurTreatments() {
       </div>
 
       {/* CUSTOM ARROWS */}
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         .slick-prev,
         .slick-next {
           width: 60px !important;
