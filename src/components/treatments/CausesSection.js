@@ -20,10 +20,10 @@ export default function CausesSection({ data }) {
                 hover:shadow-green-900/10 cursor-pointer shadow-sm border border-green-50"
             >
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-sm text-[#004E22]">
+                <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-white rounded-full shadow-sm text-[#004E22] shrink-0">
                   {renderIcon(item.icon)}
                 </div>
-                <h3 className="text-[24px] font-bold text-[#004E22] font-serif">{item.title}</h3>
+                <h3 className="text-[20px] md:text-[24px] font-bold text-[#004E22] font-serif leading-tight">{item.title}</h3>
               </div>
               <p className="text-gray-700 text-[16px] leading-relaxed">{item.description}</p>
             </div>

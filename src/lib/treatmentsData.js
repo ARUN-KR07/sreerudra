@@ -2,7 +2,7 @@ export const slugData = {
   // ─────────────────────────────────────────────────────────────────────────
   // SLUG: lower-back-pain
   // ─────────────────────────────────────────────────────────────────────────
-  "lower-back-pain": {
+  "spinal-problems": {
     hero: {
       title: "Ayurvedic Treatment For Spinal Problems in Kerala",
       description:
@@ -203,7 +203,7 @@ export const slugData = {
   // ─────────────────────────────────────────────────────────────────────────
   // SLUG: neck-pain
   // ─────────────────────────────────────────────────────────────────────────
-  "neck-pain": {
+  "cervical-spondylosis": {
     hero: {
       title: "Ayurvedic Treatment For Neck Pain in Kerala",
       description:
@@ -723,6 +723,72 @@ export const slugData = {
         { title: "Mental Disorder", img: "treatment1.png" },
         { title: "Mental Disorder", img: "treatment1.png" },
       ],
+    },
+  },
+
+  "rectal-problems": {
+    hero: {
+      title: "Ayurvedic Treatment For Piles Problems in Kerala",
+      description:
+        "Ano-rectal problems can affect persons of all ages, ranging from newborns to the elderly. The most frequent anorectal problems are piles, fissures, and fistulas. Piles is characterized by bleeding or prolapsing of the rectum during defecation. Fissures are tears in the anal tract that occur when hard stool is passed.A fistula is a pus-filled cavity in the anal system. Digestion is a primary problem in all anorectal illnesses, as is sluggish digestion. Excessive sexual activity, physical strain, eating non-vegetarian foods, and drinking alcohol are common causes of rectal problems. With individualized medicines, nutrition, and lifestyle recommendations, Ayurveda treatment for piles in Sree Rudra produces positive effects.",
+      image: "/images/rectal_hero.jpg",
+      imageAlt: "Rectal Treatment",
+    },
+    conditions: {
+      heading: "Anorectal Conditions",
+      items: ["Piles", "Fistula", "Fissure", "Abscess"],
+    },
+    conditionDetail: {
+      heading: "Understanding Rectal Problems",
+      description: "Comprehensive Ayurvedic management of anorectal disorders.",
+    },
+    symptoms: {
+      heading: "Symptoms of Piles",
+      cards: [
+        {
+          image: "/images/cause2.png",
+          title: "Ayurvedic Treatment For Piles (Hemorrhoid)",
+          description: "The premise that there are three doshas, or body types: pitta, vata, and kapha, is a basic tenet of Ayurvedic treatment. Each dosha corresponds to a particular element — fire (pitta), air (vata), and water (kapha) — and a person who has one dominant dosha will exhibit physical or emotional qualities that correspond to that element. In Ayurveda, the ultimate goal is to achieve dosha balance. Diet, lifestyle changes, and natural therapies are used to accomplish this."
+        },
+        {
+          image: "/images/cause1.png",
+          title: "Swollen Veins In The Anus And Rectum Are Known As Hemorrhoids. They Can Be Internal Or Exterior",
+          list: [
+            "A lot of itchiness around the anus",
+            "Swelling or lump around your anus that is uncomfortable or irritating",
+            "Bowel movements that hurt",
+            "Your anus may bleed during or after bowel motions.",
+            "Itchiness and pain in the area of the anus",
+            "Involuntary stool leakage."
+          ]
+        }
+      ]
+    },
+  },
+
+  "cancer-treatment": {
+    hero: {
+      title: "Ayurvedic Support for Cancer Care",
+      description: "Integrative Ayurvedic protocols to support conventional cancer treatments and improve quality of life.",
+      image: "/images/cancer_hero.jpg",
+      imageAlt: "Cancer Care",
+    },
+    conditionDetail: {
+      heading: "Ayurvedic Oncology",
+      description: "Focusing on immunity (Ojas) and detoxification (Panchakarma) to support recovery.",
+    },
+  },
+
+  "autism-treatment": {
+    hero: {
+      title: "Ayurvedic Management for Autism",
+      description: "Holistic therapies and herbal support for neurological development and behavioral improvement.",
+      image: "/images/autism_hero.jpg",
+      imageAlt: "Autism Treatment",
+    },
+    conditionDetail: {
+      heading: "Supportive Care for Autism",
+      description: "Personalized Ayurvedic protocols for children with ASD.",
     },
   },
 };
