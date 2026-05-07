@@ -1,5 +1,5 @@
 export default function RelatedTreatments({ data }) {
-  if (!data.treatments?.items?.length) return null;
+  if (!data?.treatments?.items?.length) return null;
 
   return (
     <main className="page-spacing">

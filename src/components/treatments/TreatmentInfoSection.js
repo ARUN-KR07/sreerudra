@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function TreatmentInfoSection({ title, subtitle, description, cta, onCtaClick }) {
+export default function TreatmentInfoSection({ title, subtitle, description, description2, cta, onCtaClick }) {
   if (!description) return null;
 
   return (
@@ -19,9 +19,16 @@ export default function TreatmentInfoSection({ title, subtitle, description, cta
         )}
 
         {/* Description */}
-        <p className="text-[16px] md:text-[18px] font-normal text-gray-700 max-w-4xl mx-auto mb-10 leading-relaxed">
+        <p className="text-[16px] md:text-[18px] font-normal text-gray-700 max-w-7xl mx-auto mb-10 leading-relaxed">
           {description}
         </p>
+
+        {/* Secondary Description */}
+        {description2 && (
+          <p className="text-[16px] md:text-[18px] font-normal text-gray-700 max-w-67xl mx-auto mb-10 leading-relaxed">
+            {description2}
+          </p>
+        )}
 
         {/* Button */}
         <div className="flex justify-center">

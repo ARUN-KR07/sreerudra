@@ -5,6 +5,7 @@ import FaqSection from "@/components/treatments/FaqSection";
 import TreatmentsTabs from "@/components/treatments/TreatmentsTabs";
 import PopupForm from "@/components/form/PopupForm";
 import TreatmentInfoSection from "@/components/treatments/TreatmentInfoSection";
+import NonMedicinal from "@/components/treatments/NonMedicinal";
 
 export default function TreatmentClientWrapper({ data }) {
   const [activeTab, setActiveTab] = useState(data?.ourTreatments?.tabs?.[0] || "");
@@ -21,6 +22,16 @@ export default function TreatmentClientWrapper({ data }) {
         <TreatmentInfoSection
           title={data.conditionDetail.heading}
           description={data.conditionDetail.description}
+          description2={data.conditionDetail.description2}
+          onCtaClick={() => setOpen(true)}
+        />
+      )}
+
+      {/* Condition Detail (Needs state for the Popup) */}
+      {data.conditionDetail2 && (
+        <TreatmentInfoSection
+          title={data.conditionDetail2.heading}
+          description={data.conditionDetail2.description}
           onCtaClick={() => setOpen(true)}
         />
       )}
@@ -47,8 +58,16 @@ export default function TreatmentClientWrapper({ data }) {
         />
       )}
 
+      {/* Non Medicinal Treatment (Optional) */}
+      {data.nonmedicinal && !data.hideNonMedicinal && (
+        <NonMedicinal
+          data={data}
+          onCtaClick={() => setOpen(true)}
+        />
+      )}
+
       {/* FAQs */}
-      {data.faqs && (
+      {data.faqs && !data.hideFaqs && (
         <FaqSection
           data={data}
           activeIndex={activeIndex}
@@ -57,7 +76,7 @@ export default function TreatmentClientWrapper({ data }) {
       )}
 
       {/* Tabs */}
-      {data.ourTreatments && (
+      {data.ourTreatments && !data.hideTabs && (
         <TreatmentsTabs
           data={data}
           activeTab={activeTab}

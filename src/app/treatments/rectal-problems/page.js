@@ -1,12 +1,13 @@
 import { slugData } from "@/lib/treatmentsData";
 import HeroSection from "@/components/treatments/HeroSection";
 import SymptomsSection from "@/components/treatments/SymptomsSection";
-import ConditionsGrid from "@/components/treatments/ConditionsGrid";
-import RiskSection from "@/components/treatments/RiskSection";
-import CausesSection from "@/components/treatments/CausesSection";
+import InterventionsSection from "@/components/treatments/InterventionsSection";
+import MedicinesSection from "@/components/treatments/MedicinesSection";
 import RelatedTreatments from "@/components/treatments/RelatedTreatments";
 import ConsultationForm from "@/components/form/ConsultationForm";
 import TreatmentClientWrapper from "@/components/treatments/TreatmentClientWrapper";
+import FaqSection from "@/components/treatments/FaqSection";
+import OurTreatments2 from "@/components/home/ourtreatments2";
 
 export async function generateMetadata() {
   const data = slugData["rectal-problems"];
@@ -28,6 +29,16 @@ export default function RectalProblemsPage() {
 
       {/* Handles Detail, FAQs, Tabs, Popup */}
       <TreatmentClientWrapper data={data} />
+
+      {/* New Interventions Section */}
+      <InterventionsSection data={data} />
+
+      {/* New Medicines Section */}
+      <MedicinesSection data={data} />
+
+      <FaqSection data={data} />
+
+      <OurTreatments2 />
 
       <RelatedTreatments data={data} />
 

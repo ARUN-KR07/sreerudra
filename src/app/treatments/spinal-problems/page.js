@@ -6,6 +6,7 @@ import CausesSection from "@/components/treatments/CausesSection";
 import RelatedTreatments from "@/components/treatments/RelatedTreatments";
 import ConsultationForm from "@/components/form/ConsultationForm";
 import TreatmentClientWrapper from "@/components/treatments/TreatmentClientWrapper";
+import InfoGrids from "@/components/treatments/InfoGrids";
 
 export async function generateMetadata() {
   const data = slugData["spinal-problems"];
@@ -25,6 +26,7 @@ export default function SpinalProblemsPage() {
       <RiskSection data={data} />
       <CausesSection data={data} />
       <TreatmentClientWrapper data={data} />
+      <InfoGrids data={data} />
       <RelatedTreatments data={data} />
       <ConsultationForm />
     </div>

@@ -7,7 +7,7 @@ function getFontSize(text) {
 }
 
 export default function RiskSection({ data }) {
-  if (!data.risks?.items?.length) return null;
+  if (!data?.risks?.items?.length) return null;
 
   return (
     <main className="page-spacing">

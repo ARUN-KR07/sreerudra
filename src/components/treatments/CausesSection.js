@@ -1,6 +1,8 @@
 import { renderIcon } from "./IconResolver";
 
 export default function CausesSection({ data }) {
+  if (!data?.causes) return null;
+
   return (
     <main className="page-spacing py-16">
       <section className="w-full max-w-[1720px] mx-auto px-10">

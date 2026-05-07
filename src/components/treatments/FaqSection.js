@@ -1,6 +1,16 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
-export default function FaqSection({ data, activeIndex, toggleFaq }) {
+export default function FaqSection({ data, activeIndex: propsActiveIndex, toggleFaq: propsToggleFaq }) {
+  const [internalActiveIndex, setInternalActiveIndex] = useState(0);
+
+  const activeIndex = propsActiveIndex !== undefined ? propsActiveIndex : internalActiveIndex;
+  const toggleFaq = propsToggleFaq || ((index) => setInternalActiveIndex(index === internalActiveIndex ? -1 : index));
+
+  if (!data.faqs) return null;
+
   return (
     <main className="page-spacing">
       <section className="bg-[#0B7A3B] w-full px-4 md:px-0 rounded-[32px] overflow-hidden font-[family-name:var(--font-karla)]">
@@ -12,7 +22,7 @@ export default function FaqSection({ data, activeIndex, toggleFaq }) {
             <div className="w-full max-w-[586px] h-[500px] rounded-[12px]
               border-[2px] border-white overflow-hidden shadow-2xl">
               <Image
-                src={data.faqs.image}
+                src="/images/contact.png"
                 alt="faq"
                 width={586}
                 height={500}

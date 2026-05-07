@@ -1,5 +1,5 @@
 export default function ConditionsGrid({ data }) {
-  if (!data.conditions?.items?.length) return null;
+  if (!data?.conditions?.items?.length) return null;
 
   return (
     <main className="page-spacing">

@@ -205,169 +205,95 @@ export const slugData = {
   // ─────────────────────────────────────────────────────────────────────────
   "cervical-spondylosis": {
     hero: {
-      title: "Ayurvedic Treatment For Neck Pain in Kerala",
+      title: "Ayurvedic Treatment for Cervical Spondylosis In Kerala ",
       description:
-        "SreeRudra Ayurveda Multispecialty Hospital offers specialised Ayurvedic treatments for neck pain and cervical conditions. Our expert practitioners combine traditional Ayurvedic wisdom with modern diagnostic approaches to provide lasting relief.",
-      image: "/images/spine.jpg",
+        "The spinal cord and nerves pass through vertebrae which protect and support them. 26 of such vertebrae make up the spine. The spinal discs are a staunch spindle that is elastic in nature which is present in each of the spine joint segments. These discs are what provide a wide range of motion for the neck as well as the lower back.Over time, due to the various stresses the lower back and neck are put through, as well as ageing, the discs tend to lose their pliancy, which may result in painful and possibly impairing symptoms that may result in limited mobility. While allopathic treatments for spinal disorders are mostly surgical procedures, Ayurvedic treatment for spinal problems relies on restoring the imbalanced doshas to treat spinal disorders.",
+      image: "/images/neck1.png",
       imageAlt: "Neck Pain Treatment",
     },
-    conditions: {
-      heading: "Neck/Cervical Conditions",
+    susceptible: {
+      heading: "Who Are More Susceptible?",
       items: [
-        "Cervical Spondylosis",
-        "Neck Sprain",
-        "Cervical Disc Herniation",
-        "Torticollis",
-        "Whiplash",
-        "Cervical Stenosis",
-        "Radiculopathy",
-        "Muscle Strain",
-        "Degenerative Disc Disease",
-        "Neck Arthritis",
+        "People with a sedentary lifestyle",
+        "Aged persons",
+        "People with previous injuries to the neck",
+        "People with digestive disorders",
+        "People with the heredity of Arthritis.",
+        "People lifting heavy weights regularly",
+        "IT professionals or people who are using computers and typing instruments for a prolonged time",
+        "People with hormonal disorders like hypo/ hyper-thyroidism, PCOS, auto immune diseases.",
       ],
     },
-    risks: {
-      heading: "Top Risks You Can't Ignore",
-      items: [
-        { text: "Age", img: "/images/age.png" },
-        { text: "Poor Posture", img: "/images/physic.png" },
-        { text: "Sedentary Lifestyle", img: "/images/exercise.png" },
-        { text: "Excess Weight", img: "/images/weight.png" },
-        { text: "Stress", img: "/images/yoga.png" },
-        { text: "Smoking", img: "/images/smoke.png" },
+    cause2: {
+      heading: "Causes",
+
+      description:
+        "Ayurvedic Treatment for Cervical spondylosis is a disease which affects inter vertebral discs of cervical vertebrae. For understanding the pathology, cervical spine anatomy should be understood. Cervical spine contain 7 vertebrae. A spongy gel like substance is situated between two vertebrae called intervertebral disc(IV Disc) which provide a cushioning effect. Cervical nerves are emerging out from pathways corresponding to spine. In cervical spondylosis, these IV discs and vertebrae are affected in different manner. ",
+
+      leftTitle: "Causes Can Be Summarized As Below",
+
+      leftItems: [
+        "Dehydrated discs: In this condition discs may loss its spongy nature and become dry results in direct bone to bone contact which cause pain.",
+        "Intervetebral disc prolapse: Sometime IV discs may slip from vertebral space causing compression to nerve roots resulting in pain, numbness and disabilities.",
+        "Bone spurs: Degeneration of vertebrae sometime results in abnormal growth of bony structure called as spur. This may come in contact with nerve root or spine."
       ],
-      videoSection: {
-        heading: "Neck Pain Treatment Explained",
-        subtext:
-          "Understand how Ayurveda approaches cervical conditions from our expert doctors.",
-        image: "/images/doctor.png",
-      },
+
+      rightTitle: "Symptoms",
+
+      rightItems: [
+        "Pain over the cervical region usually increased by excess movement and strain",
+        "Referred pain: pain may transfer to the back of head, shoulders and upper arms",
+        "Feel of giddiness on the sudden movement of the head",
+        "Numbness, tingling, or weakness in upper limbs",
+        "Intermittent pain in the neck and upper back",
+        "Stiffness of neck"
+      ]
     },
     conditionDetail: {
-      image: "/images/lowerbackpain.jpg",
-      heading: "Neck Pain",
-      description:
-        "Neck pain is one of the most common musculoskeletal complaints affecting people worldwide. The cervical spine supports the head and allows a wide range of motion. Common causes include poor posture, muscle strain, degenerative changes, and trauma. Ayurvedic treatments address the root cause, offering lasting relief without side effects.",
+      heading: "Investigations",
+      description: "Radiological image techniques like X-ray, MRI or CT of cervical spines will give an exact impression about the underlying pathology.Blood tests for reactive diseases, hormonal imbalance, auto-immune disorders are also helpful.",
     },
-    causes: {
-      heading: "Causes",
-      items: [
-        {
-          icon: "Bone",
-          title: "Cervical Disc Degeneration",
-          description:
-            "As discs between cervical vertebrae wear down over time, they lose their cushioning ability. This leads to bone-on-bone contact, inflammation, and nerve compression causing chronic neck pain and stiffness.",
-        },
-        {
-          icon: "Activity",
-          title: "Muscle Strain & Tension",
-          description:
-            "Prolonged periods of poor posture, especially with screens and devices, cause chronic muscle tension in the neck and upper back, leading to trigger points and restricted movement.",
-        },
-      ],
-    },
-    medicalAttention: {
-      heading: "Medical Attention Needs To Be Taken In Case Of The Following",
-      items: [
-        {
-          icon: "TrendingUp",
-          title: "Radiating Arm Pain",
-          description:
-            "If neck pain radiates down the arm with numbness or tingling, it may indicate nerve compression requiring immediate evaluation.",
-        },
-        {
-          icon: "Droplets",
-          title: "Loss of Coordination",
-          description:
-            "Difficulty walking, loss of balance, or coordination problems alongside neck pain can signal serious spinal cord involvement.",
-        },
-        {
-          icon: "Syringe",
-          title: "Persistent Headaches",
-          description:
-            "Severe or persistent headaches combined with neck stiffness, especially with fever, need urgent medical assessment.",
-        },
-      ],
-    },
-    prevention: {
-      heading: "Prevention",
-      items: [
-        {
-          icon: "Sport",
-          title: "Neck Exercises",
-          text: "Regular stretching and strengthening exercises help maintain cervical flexibility and reduce injury risk.",
-        },
-        {
-          icon: "Droplets",
-          title: "Ergonomics",
-          text: "Maintain proper workstation setup and screen height to reduce neck strain during work.",
-        },
-        {
-          icon: "HeartPlus",
-          title: "Sleep Position",
-          text: "Use a supportive pillow that keeps the spine aligned during sleep.",
-        },
-        {
-          icon: "Cigarette",
-          title: "Avoid Smoking",
-          text: "Smoking accelerates disc degeneration and impairs healing of cervical tissues.",
-        },
-      ],
-    },
-    causeCards: {
-      heading: "What's Causing Your Neck Pain?",
-      items: [
-        {
-          label: "Poor Posture",
-          subtext:
-            "How does posture contribute to cervical problems in Ayurveda?",
-        },
-        { label: "Stress" },
-        { label: "Injury" },
-        { label: "Disc Wear" },
-        { label: "Obesity" },
-        { label: "Screen Time" },
-        { label: "Age" },
-        { label: "Genetics" },
-      ],
-    },
-    treatments: {
-      heading: "Neck Pain Treatments in Ayurveda",
-      items: [
-        { title: "Greeva Vasti", desc: "(Oil pooling over the neck region)" },
-        { title: "Abhyanga", desc: "(Medicated oil massage)" },
-        { title: "Nasya", desc: "(Nasal administration of oils)" },
-        {
-          title: "Shirodhara",
-          desc: "(Continuous oil flow over the forehead)",
-        },
-        {
-          title: "Patrapindasweda",
-          desc: "(Herbal leaf bundle fomentation)",
-        },
-        { title: "Upanaha", desc: "(Application of herbal pastes)" },
-        { title: "Vasti", desc: "(Medicated enema for systemic healing)" },
-        { title: "Pizhichil", desc: "(Warm oil bath therapy)" },
-      ],
-    },
-    ourTreatments: {
-      heading: "Our Treatment",
-      tabs: [
-        "Lifestyle",
-        "Pain & Ortho",
-        "Neuro",
-        "Women & Wellness",
-        "Specialized Care",
-      ],
+
+    ayurvedicAspect: {
+      heading: "Ayurvedic Aspects Of Cervical Spondylosis",
+      description: "All the degenerative conditions are classified in Ayurveda under Vata disease. Different diseases described in Charak Samhita, Susrutha Samhita and Ashtanga Hridaya like Viswachi, Manyasthambha, and Greevagraha, etc have one more symptom similar to Cervical spondylosis.",
       cards: [
-        { title: "Neck Disorders", img: "treatment1.png" },
-        { title: "Spinal Care", img: "treatment2.png" },
-        { title: "Pain Management", img: "treatment3.png" },
-        { title: "Neuro Conditions", img: "treatment4.png" },
-        { title: "Mental Wellness", img: "treatment1.png" },
-        { title: "Rehabilitation", img: "treatment2.png" },
-      ],
+        {
+          title: "Guggulu(Commiphora Mukul)",
+
+          description: "This is a well-known drug in Ayurveda which reduces inflammation, it also possesses anti-arthritic properties. Ayurvedic formulations like Gugguluthiktakam Kashayam, Yograja Guggulu,Trayodasanga Guggulu, Kaisore Guggulu, etc are commonly used in the ayurvedic treatment of cervical spondylosis."
+        },
+        {
+          title: "Medicines",
+
+          description: "A wide range of medicines is available in Ayurveda to manage vatha diseases. They will pacify vatha and reduce inflammation and pain. When kapha alleviated, stiffness will be reduced. The application of medicinal pastes(lepa) will be highly beneficial to reduce inflammations. Medicated ghee is given to regain the unctuousness."
+        },
+        {
+          title: "Chikithsa",
+
+          description: "Aches and pain management is one of the strongest positives of Ayurveda. Aim of treatment to restore bone strength and rehydrate them. But just applying some oils will not give you any benefits. Proper medicines with panchakarma therapies associated with yoga and lifestyle management will be beneficial to a great extent."
+        }
+      ]
     },
+    nonmedicinal: {
+      heading: "Non Medicinal Management",
+
+      description:
+        "Various non medicinal approaches help in reducing cervical pain, improving flexibility and maintaining muscular strength.",
+
+      items: [
+        "Immobilization Of Neck With Help Of Collars Or Any Other Measures To Reduce Acute Pain",
+
+        "Mechanical Tractions Are Widely Used Technique For Treating Spondylosis",
+
+        "Isometric Cervical Exercises Will Help To Retain Muscular Tone",
+
+        "Occupational Therapies To Improve Quality Of Life",
+
+        "Lifestyle Modifications May Involve An Evaluation Of Workplace Ergonomics, Postural Training, Neck-School, Stress Management Etc"
+      ]
+    },
+
     faqs: {
       heading: "Frequently asked questions",
       image: "/images/faq.png",
@@ -731,7 +657,7 @@ export const slugData = {
       title: "Ayurvedic Treatment For Piles Problems in Kerala",
       description:
         "Ano-rectal problems can affect persons of all ages, ranging from newborns to the elderly. The most frequent anorectal problems are piles, fissures, and fistulas. Piles is characterized by bleeding or prolapsing of the rectum during defecation. Fissures are tears in the anal tract that occur when hard stool is passed.A fistula is a pus-filled cavity in the anal system. Digestion is a primary problem in all anorectal illnesses, as is sluggish digestion. Excessive sexual activity, physical strain, eating non-vegetarian foods, and drinking alcohol are common causes of rectal problems. With individualized medicines, nutrition, and lifestyle recommendations, Ayurveda treatment for piles in Sree Rudra produces positive effects.",
-      image: "/images/rectal_hero.jpg",
+      image: "/images/piles1.jpg",
       imageAlt: "Rectal Treatment",
     },
     conditions: {
@@ -739,19 +665,25 @@ export const slugData = {
       items: ["Piles", "Fistula", "Fissure", "Abscess"],
     },
     conditionDetail: {
-      heading: "Understanding Rectal Problems",
-      description: "Comprehensive Ayurvedic management of anorectal disorders.",
+      heading: "Medication, Also Known As Bhaishajya Chikitsa",
+      description: "The majority of small hemorrhoids can be treated solely with medicine. There are no more operations necessary unless the haemorrhoids are severe. In the worst-case scenario, drugs may be employed alongside surgeries. Your dosha will influence the pharmaceutical solutions that your Ayurvedic practitioner prescribes and any dietary or lifestyle adjustments they recommend to prevent a recurrence. Some medications may not be appropriate for your dosha, so listen to your doctor’s advice.",
+    },
+    hideFaqs: true,
+    hideTabs: true,
+    conditionDetail2: {
+      heading: "Kshara Or Herbal Application",
+      description: "Kshara is an alkaline, caustic paste that is used to treat hemorrhoids. The paste has a cauterizing effect and is made of a herbal blend. Specialized equipment called a slit proctoscope is used to apply Kshara to hemorrhoids. The material then cauterizes hemorrhoids, which may have been open and bleeding. This Kshara karma method is regarded as the greatest approach for treating hemorrhoids in Ayurvedic medicine. Depending on your dosha, you’ll be instructed to take specific medications to balance your body as you recuperate. You may need to make dietary or lifestyle adjustments to help your body recuperate.",
     },
     symptoms: {
       heading: "Symptoms of Piles",
       cards: [
         {
-          image: "/images/cause2.png",
+          image: "/images/piles2.jpg",
           title: "Ayurvedic Treatment For Piles (Hemorrhoid)",
           description: "The premise that there are three doshas, or body types: pitta, vata, and kapha, is a basic tenet of Ayurvedic treatment. Each dosha corresponds to a particular element — fire (pitta), air (vata), and water (kapha) — and a person who has one dominant dosha will exhibit physical or emotional qualities that correspond to that element. In Ayurveda, the ultimate goal is to achieve dosha balance. Diet, lifestyle changes, and natural therapies are used to accomplish this."
         },
         {
-          image: "/images/cause1.png",
+          image: "/images/piles3.jpg",
           title: "Swollen Veins In The Anus And Rectum Are Known As Hemorrhoids. They Can Be Internal Or Exterior",
           list: [
             "A lot of itchiness around the anus",
@@ -764,32 +696,152 @@ export const slugData = {
         }
       ]
     },
+    interventions: {
+      heading: "Surgical Intervention",
+      description: "Kshara sutra is an Ayurvedic therapy that your Ayurvedic practitioner may recommend. The Kshara Sutra utilizes a specific medicated thread to knot hemorrhoids off at the base. The blood flow to the vein is cut off, which allows hemorrhoids to decrease over the next 7 to 10 days. On its own, it will wilt and detach. Only after other therapies have failed will this more invasive method be tried. Your Ayurvedic practitioner will take your dosha into account when it comes to treatment. For example, you may require certain herbs to aid with postoperative recovery. To avoid future hemorrhoids, you may need to make lasting adjustments to your diet, activity, and other factors.\n\nEven though this technique is considered less invasive, it is not without danger. Surgical intervention could be risky for patients prone to infection, have a bleeding issue, or are using heart or blood-thinning drugs. Seek advice from a qualified healthcare provider",
+      image: "/images/piles1.jpg",
+      bottomCards: [
+        {
+          title: "Cauterization, Also Known As Agni Karma",
+          description: "Infrared heat can be used to sear external hemorrhoids. Your Ayurvedic practitioner may recommend that you burn the hemorrhoids. Cauterization will cause discomfort. This type of therapy may require five to six treatments spread out over the same number of weeks before showing results. Your dosha will be considered once more before therapy. This surgery has the potential to cause more discomfort or infection. Please consult your doctor about strategies to lower your risks and ensure it's right for you.",
+          image: "/images/cause1.png"
+        },
+        {
+          title: "Ayurvedic Treatment For Anal Fissure",
+          description: "Cauterization, Also Known As Agni Karma. Infrared heat can be used to sear external hemorrhoids. Your Ayurvedic practitioner may recommend that you burn the hemorrhoids. Cauterization will cause discomfort. This type of therapy may require five to six treatments spread out over the same number of weeks before showing results. Your dosha will be considered once more before therapy. This surgery has the potential to cause more discomfort or infection. Please consult your doctor about strategies to lower your risks and ensure it's right for you.",
+          image: "/images/cause2.png"
+        }
+      ]
+    },
+    medicines: {
+      items: [
+        {
+          title: "Oil Of Jatyadi",
+          description: "It acts as an antibacterial, antimicrobial, antipruritic, and wound healing booster, reducing itching, burning, and irritation around the anal region. It also aids in the healing of tears produced by firm stools passing."
+        },
+        {
+          title: "Yashtimadhu Churna",
+          description: "This anti-inflammatory and analgesic substance is also known as mulethi. This works as an antacid as well. It relieves the burning sensation while also hastening the healing of fissures."
+        },
+        {
+          title: "Rasayana Of Gandhak",
+          description: "It is used to treat many infections due to its antibacterial, antiviral, and antimicrobial characteristics. These also have anti-inflammatory qualities, which aid in reducing anal edema."
+        },
+        {
+          title: "Triphala Guggulu",
+          description: "Because of its analgesic and anti-constipation properties, Triphala Guggulu is used to treat anal fissures, constipation, as well as the pain caused by fissures. Apart from that, the medicine softens faeces and protects the body from infection. If you have persistent constipation, Gulkand or Triphala Churna can be used instead of Triphala Guggulu."
+        }
+      ]
+    },
+    faqs: {
+      heading: "Frequently Asked Questions",
+      image: "/images/faq.png",
+      items: [
+        {
+          question: "Is Ayurvedic treatment effective for chronic piles?",
+          answer: "Yes, Ayurveda offers highly effective treatments for chronic piles through medication (Bhaishajya Chikitsa), lifestyle changes, and procedures like Kshara Karma and Kshara Sutra, which help in complete recovery and prevent recurrence."
+        },
+        {
+          question: "How long does Kshara Sutra therapy take for fistula?",
+          answer: "The duration of Kshara Sutra therapy depends on the length and depth of the fistula track. Generally, the thread is changed weekly, and the track heals at a rate of approximately 1 cm per week."
+        },
+        {
+          question: "Are there any dietary restrictions during rectal treatment?",
+          answer: "Yes, diet plays a crucial role. Patients are advised to eat fiber-rich foods, stay hydrated, and avoid spicy, oily, and heavy-to-digest non-vegetarian foods to maintain soft stools and easy bowel movements."
+        },
+        {
+          question: "Can piles recur after Ayurvedic treatment?",
+          answer: "Ayurvedic treatments like Kshara Sutra have a very low recurrence rate (less than 1%). However, maintaining a healthy diet and preventing constipation are essential to ensure long-term results."
+        },
+        {
+          question: "Is the Ayurvedic procedure for piles painful?",
+          answer: "Procedures like Kshara Karma are minimally invasive and performed under local anesthesia if necessary. Most patients experience minimal discomfort and can return to their daily routine much faster than conventional surgery."
+        }
+      ]
+    }
   },
 
-  "cancer-treatment": {
+  "varicose-vein": {
     hero: {
-      title: "Ayurvedic Support for Cancer Care",
-      description: "Integrative Ayurvedic protocols to support conventional cancer treatments and improve quality of life.",
-      image: "/images/cancer_hero.jpg",
-      imageAlt: "Cancer Care",
+      title: "Ayurvedic Treatment For Varicose Vein In Kerala",
+      description: "The term ‘varicose’ refers to a dilated or swollen vein. Varicose veins are caused by a backflow of blood in the veins, causing them to become excessively bloated, twisted, and dilated. The veins of the legs are usually affected by varicose veins.Veins are the blood channels that convey deoxygenated blood from the legs to the heart. Valves are structures that prevent blood from flowing backward. These valves become weak due to vigorous activities requiring prolonged standing, weight carrying, or long-distance walking, leading blood flow to reverse direction, producing swelling and dilatation in the veins. Varicosity in veins can be caused by various factors, including obesity, diabetes, pregnancy, and hypertension. The Varicose vein treatment in ayurveda of Kerala is popular due to its success rates.",
+      image: "/images/varicose1.jpg",
+      imageAlt: "Varicose Vein",
     },
     conditionDetail: {
-      heading: "Ayurvedic Oncology",
-      description: "Focusing on immunity (Ojas) and detoxification (Panchakarma) to support recovery.",
+      heading: "Varicose Vein",
+      description: "Varicose veins are twisted, enlarged veins. Any vein close to the surface of the skin (superficial) can become a varicose vein. Varicose veins most commonly affect the veins in the legs.",
+    },
+    risks: {
+      heading: "The Risks You Can't Ignore",
+      items: [
+        { text: "Diabetes", img: "/images/age.png" },
+        { text: "High Blood Pressure", img: "/images/weight.png" },
+        { text: "Family History", img: "/images/physic.png" },
+        { text: "Heart Disease", img: "/images/yoga.png" },
+        { text: "Smoking", img: "/images/smoke.png" },
+        { text: "Obesity", img: "/images/exercise.png" },
+      ],
+      videoSection: {
+        heading: "Treatments explained by a doctor",
+        subtext:
+          "Understand the procedure and benefits directly from our medical experts.",
+        image: "/images/doctor.png",
+      },
+    },
+    conditionDetail: {
+      heading: "Panchakarma Therapies For Varicose Vein",
+      description: "Ayurvedic treatments for varicose veins include Shamana chikitsa (with medications) and Shodhana chikitsa with Panchakarma therapies. Panchakarma methods such as Basti (Bowel cleaning), Raktamokshana (Leech therapy), and Siravyadha (Bloodletting) are quite beneficial. Internal medications such as Kaishora Guggulu and Triphala Guggulu are popular. Eranda, Guduchi, and Punarnva are herbs that decrease inflammation and improve blood flow. Other plants used for blood cleansing include Sariva, Manjista, and Mandookaparni. Kashayas produced from these plants are quite helpful in this situation. The doshas can be balanced with Triphala churna, which will assist relieve the strain on the afflicted veins.",
+      description2: "The vata dosha is regarded to be the most powerful in ayurvedic philosophy. It regulates your thoughts, breathing, blood flow, heartbeat, and digestion. Vata may be disrupted by staying up late, fear, grief, and eating too soon after a meal, resulting in anxiety, asthma, heart disease, rheumatoid arthritis, and skin issues. Vata has the largest impact on varicose veins, according to ayurvedic medicine. Plants, animal byproducts, minerals, and metals are among the ingredients of Ayurvedic treatments. Abhyanga is the name of the massage technique it uses. Warm herb-infused oil is used to calm the body during an abhyanga session. Gotu kola, a herb cultivated in India, Southeast Asia, and Africa, is one ayurvedic treatment that claims to cure varicose veins. It comes in a tea, pill, or tincture and is comparable to parsley. Gotu kola is supposed to strengthen vein walls by boosting collagen and elastin production, beneficial for varicose veins.Leeches applied to the skin around varicose veins are examples of ayurvedic therapy. Leeches create a chemical that thins the blood, promoting healthy blood flow.Ayurveda is one of the best methods to treat Varicose Vein from the deep root.",
+    },
+    therapies: {
+      heading: "Some Of The Ayurvedic Treatments For Varicose Veins",
+      items: [
+        {
+          title: "Sariva",
+          description: "Sariva roots are rich in plant components with Varnya (beauty-boosting) and Dahaprashamana (burn-relieving) properties. The root extracts are powdered and used topically to regions of skin affected by varicose veins with painful symptoms such as itching, dryness, and dark patches to relieve irritation and level skin tone. A tonic prepared from pulverized Sariva roots is also used, since it has strong blood-purifying properties that help flush out Ama toxins and regulate circulation."
+        },
+        {
+          title: "Manjistha",
+          description: "Manjistha contains anti-inflammatory qualities that help to reduce swelling and discomfort in varicose veins in the lower legs. Apart from purifying the blood of impurities and boosting circulation in wounded veins and blood vessels, this plant effectively balances the vitiated pitta dosha. Manjistha powder combined with aloe vera gel can be used on the skin to remove spots and blemishes. The dried powder mixture of manjistha’s stem and root is a tried-and-true therapy for persistent varicose veins."
+        },
+        {
+          title: "Gotu Kola",
+          description: "Gotu kola efficiently removes plaque and hardening from blood vessels, promoting smooth circulation and maintaining normal blood pressure. It is rich in iron, a crucial trace mineral for healthy red blood cell formation and transit in the system. In addition, the abundant levels of triterpenoid antioxidants in Gotu kola leaf juice assist resolve blood vessel damage and reinforce internal structures of veins; therefore, drinking a herbal combination of Gotu kola leaf juice works wonders in enhancing collagen elastic creation."
+        },
+        {
+          title: "Eranda",
+          description: "he abundance of bioactive ricin-based chemicals in the tincture made from Eranda beans – castor oil are recognized for their incredible ability to decrease inflammation and calm blood clots in varicose veins-affected lower legs. Warming some castor oil and gently pressing it into the areas of skin with varicose veins in circular motions is a tried-and-true herbal remedy for improving blood circulation and removing dark spots."
+        },
+        {
+          title: "Chirabilva",
+          description: "Chilrabilva is rich in Pitta Shamaka, or pitta-balancing properties, and kapha and vata-modifying properties to promote optimal tridosha balance in the system. This adaptable plant is used as a bark decoction to dissolve blood clots in the lower legs and is promoted as a natural blood purifier. It’s also used topically to treat varicose veins by applying a paste produced from bark extracts to the afflicted areas of the skin"
+        }
+      ]
+    },
+    faqs: {
+      heading: "Frequently Asked Questions",
+      items: [
+        {
+          question: "Can Ayurveda completely cure varicose veins?",
+          answer: "Yes, Ayurvedic treatments like Raktamokshana and specific herbal protocols can significantly reduce swelling and strengthen vein walls, often leading to a complete recovery if addressed early.",
+        },
+        {
+          question: "How long does the treatment take?",
+          answer: "The duration depends on the severity of the condition. Generally, noticeable improvements start within 2-4 weeks of consistent treatment and lifestyle modifications.",
+        },
+        {
+          question: "Is Leech therapy (Raktamokshana) painful?",
+          answer: "Most patients experience only a mild pricking sensation. Leeches release natural anesthetics and anticoagulants that make the process comfortable and highly effective for venous congestion.",
+        },
+        {
+          question: "Are there any dietary restrictions?",
+          answer: "Ayurveda recommends avoiding excessively spicy, salty, and heavy-to-digest foods while increasing the intake of fiber-rich fruits and vegetables to prevent constipation, which can worsen varicose veins.",
+        },
+      ],
     },
   },
 
-  "autism-treatment": {
-    hero: {
-      title: "Ayurvedic Management for Autism",
-      description: "Holistic therapies and herbal support for neurological development and behavioral improvement.",
-      image: "/images/autism_hero.jpg",
-      imageAlt: "Autism Treatment",
-    },
-    conditionDetail: {
-      heading: "Supportive Care for Autism",
-      description: "Personalized Ayurvedic protocols for children with ASD.",
-    },
-  },
-};
+
+}
 

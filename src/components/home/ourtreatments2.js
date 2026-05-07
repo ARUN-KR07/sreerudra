@@ -10,6 +10,11 @@ const SLUG_CATEGORY = {
     "neck-pain": "Pain & Ortho",
     "arthritis-treatment": "Pain & Ortho",
     "kidney-disorder": "Lifestyle",
+    "varicose-vein": "Neuro",
+    "rectal-problems": "Neuro",
+    "spinal-problems": "pain and ortho",
+
+
 };
 
 const TABS = [
