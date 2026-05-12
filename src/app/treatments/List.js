@@ -19,7 +19,7 @@ export default function List() {
     { name: "Diabetes", slug: "diabetes" },
     { name: "Primary Hypertension", slug: "primary-hypertension" },
     { name: "Lung Disorders", slug: "lung-disorders" },
-    { name: "Liver Disorders", slug: "liver-disorders" },
+    { name: "Liver Cirrhosis", slug: "liver-cirrhosis" },
     { name: "Mental Disorders", slug: "mental-disorders" },
     { name: "Sinusitis", slug: "sinusitis" },
     { name: "Constipation", slug: "constipation" },

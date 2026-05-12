@@ -1,25 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HeroSection({ data }) {
+export default function HeroMirror({ data }) {
   return (
-    <main className="page-spacing ">
-      <section className="page-container ">
-        <div className="max-w-7xl mx-auto bg-[#EBEBEB6E] rounded-[40px] px-4 md:px-10 py-8 md:py-12
-        transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
+    <main className="page-spacing">
+      <section className="page-container">
+        <div
+          className="max-w-7xl mx-auto bg-[#EBEBEB6E] rounded-[40px] px-4 md:px-10 py-8 md:py-12
+          transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
+        >
 
-          <div className="flex flex-col md:flex-row items-stretch justify-between gap-8 md:gap-10">
+          <div className="flex flex-col md:flex-row-reverse items-stretch justify-between gap-8 md:gap-10">
 
-            {/* Left — text */}
+            {/* Right — text */}
             <div className="flex-1 w-full text-center md:text-left flex flex-col justify-center">
 
-              <h1 className="text-[30px] md:text-[48px] lg:text-[50px] font-bold leading-tight mb-4
-              transition-all duration-300 ">
-                {data.hero.title}
-              </h1>
+              <h2
+                className="text-[2xl] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4
+                transition-all duration-300"
+              >
+                {data.heroMirror.title}
+              </h2>
 
               <p className="text-[18px] leading-relaxed mb-6 md:mb-8 text-[#6D6D6D]">
-                {data.hero.description}
+                {data.heroMirror.description}
               </p>
 
               <div>
@@ -35,9 +39,11 @@ export default function HeroSection({ data }) {
               </div>
             </div>
 
-            {/* Right — image */}
-            <div className="flex-1 w-full flex justify-center md:justify-end
-            transition-all duration-500">
+            {/* Left — image */}
+            <div
+              className="flex-1 w-full flex justify-center md:justify-start
+              transition-all duration-500"
+            >
 
               <Image
                 src={data.hero.image}

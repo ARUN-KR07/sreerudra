@@ -1,6 +1,6 @@
 import { slugData } from "@/lib/treatmentsData";
 import HeroSection from "@/components/treatments/HeroSection";
-import ConditionsGrid from "@/components/treatments/ConditionsGrid";
+import ConditionsGrid from "@/components/treatments/Grids";
 import RiskSection from "@/components/treatments/RiskSection";
 import CausesSection from "@/components/treatments/CausesSection";
 import RelatedTreatments from "@/components/treatments/RelatedTreatments";
@@ -9,6 +9,7 @@ import TreatmentClientWrapper from "@/components/treatments/TreatmentClientWrapp
 import InfoGrids from "@/components/treatments/InfoGrids";
 import OurTreatments2 from "@/components/home/ourtreatments2";
 import Slider from "@/components/treatments/Slider";
+import FaqWrapper from "@/components/treatments/faqwrapper";
 
 export async function generateMetadata() {
     const data = slugData["varicose-vein"];
@@ -27,6 +28,7 @@ export default function VaricoseVeinPage() {
             <RiskSection data={data} />
             <Slider data={data} />
             <TreatmentClientWrapper data={data} />
+            <FaqWrapper data={data} />
             <OurTreatments2 />
             <ConsultationForm />
         </div>

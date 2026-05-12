@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import FaqSection from "@/components/treatments/FaqSection";
 import TreatmentsTabs from "@/components/treatments/TreatmentsTabs";
 import PopupForm from "@/components/form/PopupForm";
 import TreatmentInfoSection from "@/components/treatments/TreatmentInfoSection";
@@ -17,43 +16,42 @@ export default function TreatmentClientWrapper({ data }) {
 
   return (
     <>
-      {/* Condition Detail (Needs state for the Popup) */}
-      {data.conditionDetail && (
+      {/* Head Para But 1 */}
+      {data.headparabut1 && (
         <TreatmentInfoSection
-          title={data.conditionDetail.heading}
-          description={data.conditionDetail.description}
-          description2={data.conditionDetail.description2}
+          title={data.headparabut1.heading}
+          descriptions={[data.headparabut1.description, data.headparabut1.description2].filter(Boolean)}
           onCtaClick={() => setOpen(true)}
         />
       )}
 
-      {/* Condition Detail (Needs state for the Popup) */}
-      {data.conditionDetail2 && (
+      {/* Head Para But 2 */}
+      {data.headparabut2 && (
         <TreatmentInfoSection
-          title={data.conditionDetail2.heading}
-          description={data.conditionDetail2.description}
+          title={data.headparabut2.heading}
+          descriptions={[data.headparabut2.description].filter(Boolean)}
           onCtaClick={() => setOpen(true)}
         />
       )}
 
-      {/* Outcomes (Optional) */}
-      {data.outcomes && (
+      {/* Head Para But 3 */}
+      {data.headparabut3 && (
         <TreatmentInfoSection
-          title={data.outcomes.heading}
-          subtitle={data.outcomes.subtitle}
-          description={data.outcomes.description}
-          cta={data.outcomes.cta}
+          title={data.headparabut3.heading}
+          subtitle={data.headparabut3.subtitle}
+          descriptions={[data.headparabut3.description].filter(Boolean)}
+          cta={data.headparabut3.cta}
           onCtaClick={() => setOpen(true)}
         />
       )}
 
-      {/* Final Outcomes (Optional) */}
-      {data.finalOutcomes && (
+      {/* Head Para But 4 */}
+      {data.headparabut4 && (
         <TreatmentInfoSection
-          title={data.finalOutcomes.heading}
-          subtitle={data.finalOutcomes.subtitle || "Get A Free Consultation now"}
-          description={data.finalOutcomes.description}
-          cta={data.finalOutcomes.cta}
+          title={data.headparabut4.heading}
+          subtitle={data.headparabut4.subtitle || "Get A Free Consultation now"}
+          descriptions={[data.headparabut4.description].filter(Boolean)}
+          cta={data.headparabut4.cta}
           onCtaClick={() => setOpen(true)}
         />
       )}
@@ -63,24 +61,6 @@ export default function TreatmentClientWrapper({ data }) {
         <NonMedicinal
           data={data}
           onCtaClick={() => setOpen(true)}
-        />
-      )}
-
-      {/* FAQs */}
-      {data.faqs && !data.hideFaqs && (
-        <FaqSection
-          data={data}
-          activeIndex={activeIndex}
-          toggleFaq={toggleFaq}
-        />
-      )}
-
-      {/* Tabs */}
-      {data.ourTreatments && !data.hideTabs && (
-        <TreatmentsTabs
-          data={data}
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
         />
       )}
 

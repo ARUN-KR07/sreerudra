@@ -7,7 +7,6 @@ import { slugData } from "@/lib/treatmentsData";
 // Slug mapping
 const SLUG_CATEGORY = {
     "lower-back-pain": "Pain & Ortho",
-    "neck-pain": "Pain & Ortho",
     "arthritis-treatment": "Pain & Ortho",
     "kidney-disorder": "Lifestyle",
     "varicose-vein": "Neuro",

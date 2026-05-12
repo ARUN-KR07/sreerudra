@@ -7,6 +7,8 @@ import CausesSection from "@/components/treatments/CausesSection";
 import RelatedTreatments from "@/components/treatments/RelatedTreatments";
 import ConsultationForm from "@/components/form/ConsultationForm";
 import DiagnosisSection from "@/components/treatments/DiagnosisSection";
+import FaqWrapper from "@/components/treatments/faqwrapper";
+import OurTreatments2 from "@/components/home/ourtreatments2";
 
 // CLIENT COMPONENT (Wrapper for interactive sections)
 import TreatmentClientWrapper from "@/components/treatments/TreatmentClientWrapper";
@@ -30,12 +32,14 @@ export default function KidneyDisorderPage() {
 
             <CausesSection data={data} />
 
-            {/* Handles ConditionDetail, Outcomes, FinalOutcomes, FAQs, Tabs, and Popup */}
             <TreatmentClientWrapper data={data} />
 
             <DiagnosisSection data={data} />
 
             <RelatedTreatments data={data} />
+            <FaqWrapper data={data} />
+
+            <OurTreatments2 />
 
             <ConsultationForm />
         </div>

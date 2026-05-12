@@ -2,7 +2,8 @@ import Image from "next/image";
 
 // Shrinks font size so long text fits inside the fixed 80px-tall label box
 function getFontSize(text) {
-  if (text.length > 25) return "20px";
+  if (text.length > 40) return "14px";
+  if (text.length > 28) return "16px";
   return "20px";
 }
 
@@ -43,6 +44,7 @@ export default function RiskSection({ data }) {
                       transition-transform duration-300 hover:scale-105"
                     />
                   </div>
+
                   <span className="text-white font-semibold text-sm md:text-base leading-tight">
                     {item.text}
                   </span>
@@ -73,15 +75,18 @@ export default function RiskSection({ data }) {
                   "absolute left-[-340px] flex items-center",
                   "absolute bottom-[-140px] left-[-240px] flex items-center",
                 ];
+
                 return (
                   <div key={i} className={`${pos[i]} group`}>
                     <span
                       style={{ fontSize: getFontSize(item.text) }}
                       className="bg-[#008439] text-white px-6 py-2 rounded-bl-[30px]
-                        w-[220px] h-[80px] flex items-center leading-tight overflow-hidden
-                        transition-all duration-300 group-hover:bg-[#00a94b] group-hover:shadow-lg">
+                        w-[220px] h-[80px] flex items-center leading-tight overflow-hidden break-words
+                        transition-all duration-300 group-hover:bg-[#00a94b] group-hover:shadow-lg"
+                    >
                       {item.text}
                     </span>
+
                     <div className="w-[137px] h-[137px] relative">
                       <Image
                         src={item.img}
@@ -103,6 +108,7 @@ export default function RiskSection({ data }) {
                   "absolute right-[-340px] flex items-center",
                   "absolute bottom-[-140px] right-[-240px] flex items-center",
                 ];
+
                 return (
                   <div key={i} className={`${pos[i]} group`}>
                     <div className="w-[137px] h-[137px] relative">
@@ -115,11 +121,13 @@ export default function RiskSection({ data }) {
                         transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
+
                     <span
                       style={{ fontSize: getFontSize(item.text) }}
                       className="bg-[#008439] text-white px-6 py-2 rounded-br-[30px]
-                        w-[220px] h-[80px] flex items-center justify-end text-right leading-tight overflow-hidden
-                        transition-all duration-300 group-hover:bg-[#00a94b] group-hover:shadow-lg">
+                        w-[220px] h-[80px] flex items-center justify-end text-right leading-tight overflow-hidden break-words
+                        transition-all duration-300 group-hover:bg-[#00a94b] group-hover:shadow-lg"
+                    >
                       {item.text}
                     </span>
                   </div>
@@ -153,7 +161,9 @@ export default function RiskSection({ data }) {
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 500px"
               className="object-cover transition-transform duration-700 hover:scale-105"
             />
+
             <div className="absolute inset-0 bg-black/20" />
+
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white/20 backdrop-blur-md border border-white/30 rounded-full
                 flex items-center justify-center shadow-2xl cursor-pointer

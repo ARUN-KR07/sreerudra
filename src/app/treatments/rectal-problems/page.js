@@ -6,7 +6,7 @@ import MedicinesSection from "@/components/treatments/MedicinesSection";
 import RelatedTreatments from "@/components/treatments/RelatedTreatments";
 import ConsultationForm from "@/components/form/ConsultationForm";
 import TreatmentClientWrapper from "@/components/treatments/TreatmentClientWrapper";
-import FaqSection from "@/components/treatments/FaqSection";
+import FaqWrapper from "@/components/treatments/faqwrapper";
 import OurTreatments2 from "@/components/home/ourtreatments2";
 
 export async function generateMetadata() {
@@ -36,7 +36,7 @@ export default function RectalProblemsPage() {
       {/* New Medicines Section */}
       <MedicinesSection data={data} />
 
-      <FaqSection data={data} />
+      <FaqWrapper data={data} />
 
       <OurTreatments2 />
 

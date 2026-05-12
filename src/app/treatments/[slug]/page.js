@@ -2,7 +2,7 @@ import { slugData } from "@/lib/treatmentsData";
 
 // SERVER COMPONENTS
 import HeroSection from "@/components/treatments/HeroSection";
-import ConditionsGrid from "@/components/treatments/ConditionsGrid";
+import ConditionsGrid from "@/components/treatments/Grids";
 import RiskSection from "@/components/treatments/RiskSection";
 import CausesSection from "@/components/treatments/CausesSection";
 import InfoGrids from "@/components/treatments/InfoGrids";
