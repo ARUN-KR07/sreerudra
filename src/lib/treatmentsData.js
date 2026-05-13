@@ -215,7 +215,7 @@ export const slugData = {
       image: "/images/neck1.png",
       imageAlt: "Neck Pain Treatment",
     },
-    susceptible: {
+    greentabs: {
       heading: "Who Are More Susceptible?",
       items: [
         "People with a sedentary lifestyle",
@@ -1964,10 +1964,393 @@ export const slugData = {
           ]
         },
         headparabut4:{
-        heading:"Main Reasons For The Development Of Osteoarthritis Are",
+        heading:"Faulty Lifestyle Or Behaviors",
 
         grid:["Excessive physical straining which are intolerable to body.","Excessive or improper exercise.","Apart this physical causes excessive mental stress,sadness etc also vitiate vata.","Excessive fasting","Carrying excessive load causes excessive pressure and stretching effect over the structures of the joint"],
        },
+
+       headparabut5:{
+        heading:"Samprapthi",
+
+        description:"Aggravation of Vata in the bones & bone-marrow dries joints and gives rise to cracking of bones & joints, piercing pain in the joints diminution of muscle tissue & strength, causing weakness and pain.",
+       },
+
+       seperate2box2: {
+          leftTitle: "Cervical Spine",
+
+          leftItems: [
+            "Tingling sensation or numbness in hand, arm, or leg",
+            "Bladder-related issues in serious cases",
+            "Difficulty in walking and balancing",
+            "Neck Pain"
+          ],
+
+          rightTitle: "Lumbar Spine",
+
+          rightItems: [
+            "Cramps in legs or foot while standing for a long duration",
+            "Tingling sensation or numbness in the leg",
+            "Lower back pain",
+          ]
+      },
+      headparabut6:{
+        heading:"Internal Medicines",
+
+        lists:["Sahacharadi kashayam: Commonly used medicine for managing painful conditions. It is a good antioxidant combination which help to prevent degeneration.","Gandha taila: helps to reduce the friction between bones and prevent degeneration.","Yogaraja guggulu: It reduces inflammation and prevent degeneration.","Ashtavargam kashayam: Used to treat joint pain,and other vata vyadhis.","Maharasnadi kashayam: This formulation is prepared from parts of 26 different plants that are used in traditional medicine for a variety of purposes such as reduction of pain, reduction of inflammation, and antipyretic activity ."]
+      },
+      // slug data
+
+      green6box: {
+        heading: "Panchakarma Therapies",
+        description:
+          "Traditional Ayurvedic therapies that help reduce pain, stiffness, inflammation, and improve mobility.",
+
+        items: [
+          {
+            title: "Abhyanga",
+            description:
+              "Vata vitiation causes dryness of joints which initiate degeneration of tissues. Oil application prevent the same. Massage stimulates blood circulation and assists the lymphatic system, improving elimination of waste through the body. Absorption through the skin can be enhanced by suspending the drug in an oily vehicle and rubbing it on the skin. Thus, the medicaments used as massage are absorbed through the skin. Oils like Dhanwantharam Tailam, Murivenna, Narayana Taila, Sahacharadi Taila, Panchasneham Kuzhambu etc are some of the oils used for Abhyanga in OA."
+          },
+
+          {
+            title: "Purgation(Virechana)",
+            description:
+              "Treatment of Sandhigatavata usually begins with a basic process like Virechana. It cleanses the body and help to open different channels thus help in better absorption of medicaments. In addition, this also helps in maintaining or restoring the optimum equilibrium in Tridosha. Drugs like Erandataila etc are used for this purpose."
+          },
+
+          {
+            title: "Swedana",
+            description:
+              "Different methods like Bashpa Sweda, Patrapottali Sweda, Jambira Panda Sweda etc are used for sudation based on the condition of the patient. This will help to open the pores in body and helps for elimination of waste materials and absorption. This therapy also help to reduce stiffness and increase range of movements."
+          },
+
+          {
+            title: "Vasthi(Enema)",
+            description:
+              "This is considered the best treatment for Vata diseases. Rectal and colon regions are rich in capillary blood vessels which enhance the quick absorption of medicine."
+          },
+
+          {
+            title: "Upanaha",
+            description:
+              "This is application of medicinal pastes over affected area and covers the area with some particular leaves which reduce inflammation and stiffness."
+          },
+
+          {
+            title: "Jalookavacharanam",
+            description:
+              "Leech application will improve local circulation thus accelerate tissue repair."
+          }
+        ]
+      },
+      headparabut7:{
+        heading:"Activities",
+
+        grid:["Obese patients should reduce body weight","Correction of poor posture","Excessive loading of the involved joint should be avoided","Excessive or improper exercise","An exercise program should be designed to maintain range of motion, strengthen periarticular muscles, and improve fitness"],
+       },
+
+       headparabut8:{
+        heading:"YOGA And Physiotherapy",
+
+        description:"Physiotherapy is the most effective treatment modality for osteoarthritis in modern aspects. It will help to reduce stiffness and improve circulation",
+        description2:"Practicing yoga is very much helpful to overcome difficulties associated with OA. This will make your mind calm , stretch your body properly and relax your muscles. Practicing ,techniques like pranayama will increase your energy level."
+       },
+       greentabs: {
+        heading: "Beneficial poses/asanas for osteoarthritis",
+        items: [
+          "VEERBHADRASANA Warrior pose",
+          "SETUBANDHASANA Bridge pose",
+          "SOORYA NAMASKARAM",
+          "TRIKONASANA Triangle pose",
+          "TRIKONASANA Triangle pose",
+        ],
+      },
+      white2boxnormal: {
+        heading: "Benefits Of Ayurvedic Treatment",
+        
+        description:
+          "Ayurvedic therapies focus on balancing the body naturally while improving strength, flexibility, immunity, and overall well-being.",
+        leftItems: [
+          "Maharasnadi kashayam: This formulation is prepared from parts of 26 different plants that are used in traditional meAswagandha (Withania somnifera (L) :It is an important medicinal plant with antiarthritis and several other pharmacological properties. The root extract showed anti-inflammatory activity which was comparable to that of 5 mg/kg hydrocortisone sodium succinate (Ai-Hindawi et al., 1992)dicine for a variety of purposes such as reduction of pain, reduction of inflammation, and antipyretic activity .",
+          "Guggulu(Commiphora mukul) : The oleoresin fraction of guggulu possesses significant anti-arthritic and anti-inflammatory activities; the minimum effective dose being 125 mg/kg g body weight",
+          "Rasna(Alpinia galanga) : flavonoids, glycosides, phenolic compounds, saponins and tannins in alpinia galangal showed significant antiinflamatory action on researches",
+          "Strengthens muscles, bones, and connective tissues.",
+          "Supports detoxification and improves overall vitality."
+        ],
+        rightItems: [
+          "Pouring moderate hot water boiled with tamarind leaves and salt will help to reduce pain",
+          "Application of paste prepared out of tamarind leaves, moringa leaves and salt is helpful to reduce inflammation",
+          "Improves immunity and resistance against diseases.",
+          "Supports long-term joint health without dependency on painkillers.",
+          "Promotes holistic healing for both body and mind."
+        ]
+      },
+      headparabut9:{
+        heading:"Prevention",
+
+        description:"Ayurveda offers “safe and effective treatment alternatives” for OA. Health is achieved by balancing not only the body, but mind and spirit as well. Treatments procedures like yoga, meditation, and the appropriate use of herbal therapies will help to achieve it.. These modalities offer their benefits without the significant risks associated with conventional medical treatments. Yoga and panchakarma is a golden combination which provide complete care for prevention and cure of osteoarthritis.",
+        description2:"As one of the major ayurvedic multispeciality hospital in India, Sreerudra Ayurveda is one of the most recognized ayurvedic treatment center for arthritis in Kerala. The hospital is located in Alappuzha district, Kerala"
+       },
+      faqs: {
+        heading: "Frequently Asked Questions",
+        items: [
+          {
+            question: "Can Ayurveda completely cure varicose veins?",
+            answer: "Yes, Ayurvedic treatments like Raktamokshana and specific herbal protocols can significantly reduce swelling and strengthen vein walls, often leading to a complete recovery if addressed early.",
+          },
+          {
+            question: "How long does the treatment take?",
+            answer: "The duration depends on the severity of the condition. Generally, noticeable improvements start within 2-4 weeks of consistent treatment and lifestyle modifications.",
+          },
+        ],
+      },
+
+  },
+  "back-pain":{
+
+    hero: {
+      title: "Ayurvedic Treatment For Back Pain In Kerala",
+      description:
+        "Sreerudra Ayurveda Multispecialty Hospital in Alappuzha, Kerala, India, is the ideal destination for those seeking lasting relief from back pain. Situated in a serene and peaceful environment, this hospital provides the perfect setting for individuals to find a complete cure for their back pain.With a team of experienced and skilled practitioners, the hospital offers a unique combination of Ayurvedic treatments, including massage, panchakarma, yoga, and herbal remedies, alongside modern treatments like physiotherapy, providing a holistic approach to healing that can effectively and sustainably alleviate back pain. With its attention to detail, SreeRudra Ayurveda Multispecialty Hospital is the ultimate destination for those suffering from back pain to find a complete cure.",
+      image: "/images/spine.jpg",
+      imageAlt: "backpain",
+    },
+    headparabut1:{
+        heading:"Back Pain",
+
+        description:"Ayurveda, an ancient system of medicine practiced in India for thousands of years, is based on the principle that body is composed of five elements: earth, water, fire, air, and space. These elements are connected with the three doshas, or energy forces that govern health and balance. Ayurveda aims to restore balance in the body through the use of herbs, diet, lifestyle changes, and bodywork. This holistic approach can effectively treat back pain by addressing its underlying cause, rather than just masking symptoms. At SreeRudra Ayurveda Multispecialty Hospital, practitioners employ various Ayurvedic treatments to address back pain, including massage, Panchakarma, herbal medicines, special diets, yoga, and lifestyle changes. Massage relaxes muscles and reduces tension, while herbal medicines reduce inflammation and improve circulation. Special diets are tailored to individual needs to reduce pain and improve overall health. Additionally, yoga and lifestyle changes enhance overall wellbeing, reduce stress, and help alleviate pain.",
+    },
+    headparabut2:{
+        heading:"Benefits Of Ayurvedic Treatments For Back Pain",
+
+        description:"Ayurvedic treatments offer numerous benefits for individuals suffering from back pain. Firstly, they effectively reduce pain and improve mobility. Additionally, they help reduce inflammation and improve circulation, relieving pressure on the affected area. Ayurvedic treatments also restore balance in the body, promoting overall wellbeing, reducing stress, and improving mental clarity.",
+    },
+    imagetextvertical: {
+
+        items: [
+          {
+            image: "/images/diabetes2.png",
+
+            title: "How Ayurvedic Treatments Work For Back Pain",
+
+            description:
+              "Ayurvedic treatments aim to restore balance in the body and address the underlying cause of pain. By combining massage, herbal medicines, customized diets, yoga, and lifestyle changes, practitioners can reduce inflammation and improve circulation, thereby reducing pain and improving mobility. Additionally, Ayurvedic treatments can enhance overall wellbeing and reduce stress, further contributing to pain relief. The herbal medicines used in Ayurvedic treatments are carefully selected for their anti-inflammatory and circulation-enhancing properties. They can also be used to treat underlying conditions that may be contributing to back pain. Moreover, special diets are tailored to individual needs to ensure optimal nutrient intake, supporting the healing process."
+          },
+
+          {
+            image: "/images/diabetes3.png",
+
+            title: "Reasons Why SreeRudra Ayurveda Multispeciality Hospital Is The Best Place For Back Pain Treatment In Kerala  ",
+
+            description:
+              "SreeRudra Ayurveda Multispecialty Hospital is the ideal destination for those suffering from back pain to seek a complete cure. The hospital boasts experienced and skilled practitioners dedicated to helping patients achieve lasting relief from back pain. The hospital offers a unique blend of Ayurvedic treatment and modern therapies, providing a holistic approach to healing that can truly provide lasting relief from back pain. Located in a serene and peaceful environment in Alappuzha, Kerala, the hospital creates an ideal atmosphere for healing. Additionally, the hospital offers modern treatments like physiotherapy and electrical stimulation, which can reduce pain and improve mobility. Finally, the hospital’s team of experienced practitioners is dedicated to helping patients find a complete cure for back pain."
+          },
+        ]
+      },
+      headparabut3:{
+        heading:"How To Prepare For An Ayurvedic Treatment For Back Pain Reliefs",
+
+        description:"Before starting an Ayurvedic treatment, it’s essential to prepare your body by maintaining a balanced and healthy diet, avoiding foods that may worsen your condition, and drinking plenty of water to keep your body hydrated and nourished. This preparation enables your body to be in its optimal state, ready to receive the treatment and facilitate the healing process.",
+      },
+      seperate2box: {
+          leftTitle: "How To Get The Most Out Of A Back Pain Treatment In Ayurveda",
+
+          leftItems: [
+            "To maximize the benefits of Ayurvedic treatment, it's essential to follow the practitioner's instructions. This includes adhering to the recommended diet and lifestyle changes, taking prescribed herbal medicines and supplements, and consistently attending treatment sessions. Consistency is crucial in achieving lasting relief from back pain."
+          ],
+
+          rightTitle: "Tips For Achieving Lasting Relief From Back Pain",
+
+          rightItems: [
+            "Besides following the practitioner's instructions, there are additional tips to achieve lasting relief from back pain. Maintaining a healthy lifestyle is crucial, which includes eating a balanced diet, avoiding harmful habits like smoking and excessive alcohol consumption, and engaging in regular exercise to strengthen muscles and improve mobility. By combining these tips with Ayurvedic treatment, individuals can optimize their chances of achieving long-term relief from back pain"
+          ]
+      },
+      headparabut4:{
+        heading:"Book Your Consultation Today!",
+
+        description:"SreeRudra Ayurveda Multispeciality Hospital in Alappuzha, Kerala, India, is the ideal destination for those suffering from back pain to seek a complete cure. The hospital offers a unique combination of Ayurvedic treatments alongside modern therapies, providing a holistic approach to healing that can truly offer lasting relief from back pain. With its attention to detail, SreeRudra Ayurveda Multispeciality Hospital is the ultimate destination for those suffering from back pain to find a complete cure.",
+      },
+      faqs: {
+        heading: "Frequently Asked Questions",
+        items: [
+          {
+            question: "Can Ayurveda completely cure varicose veins?",
+            answer: "Yes, Ayurvedic treatments like Raktamokshana and specific herbal protocols can significantly reduce swelling and strengthen vein walls, often leading to a complete recovery if addressed early.",
+          },
+          {
+            question: "How long does the treatment take?",
+            answer: "The duration depends on the severity of the condition. Generally, noticeable improvements start within 2-4 weeks of consistent treatment and lifestyle modifications.",
+          },
+        ],
+      },
+
+  },
+  "fatty-liver":{
+
+    hero: {
+      title: "Ayurvedic Treatment For Fatty Liver In Kerala",
+      description:
+        "Fatty liver disease is one of the most rapidly growing health concerns worldwide, often linked to unhealthy dietary habits, sedentary lifestyle, obesity, and excessive alcohol consumption. At Sreerudra Ayurveda Multispecialty Hospital and Research Center, we provide comprehensive and evidence-based Ayurvedic treatment for fatty liver in Kerala. Our care model integrates classical Ayurvedic wisdom with modern clinical diagnostics, offering patients a safe and natural pathway to liver regeneration and health.Recognized as a leading Ayurvedic hospital in Kerala, Sreerudra’s treatment for fatty liver focuses on restoring liver function, cleansing accumulated fat and toxins, and strengthening metabolic activity. Through individualized therapies, Panchakarma detoxification, liver-specific herbal formulations, and holistic lifestyle counseling, our patients benefit from an inside-out healing process. Whether you’re facing early-stage NAFLD (Non-Alcoholic Fatty Liver Disease) or have more complex liver concerns, our team of expert physicians tailors every treatment plan to your unique condition and constitution.",
+      image: "/images/liver1.png",
+      imageAlt: "fattyliver",
+    },
+    headparabut1:{
+
+      heading:"Understanding Fatty Liver Disease",
+      description2:"Fatty liver, or hepatic steatosis, occurs when excess fat accumulates in liver cells, hindering the organ’s ability to function properly. There are two primary types:",
+      gridsgreen:["Non-Alcoholic Fatty Liver Disease (NAFLD)","Alcoholic Fatty Liver Disease (AFLD)"],
+      description3:"NAFLD is the most prevalent liver condition and typically shows no symptoms in its initial stages. However, it can progress into serious conditions such as NASH (Non-Alcoholic Steatohepatitis), fibrosis, cirrhosis, or even liver cancer.",
+      description33:"Ayurveda categorizes fatty liver under “Yakrit Roga,” caused by the imbalance of Pitta and Kapha doshas. Improper digestion, toxin buildup (Ama), and poor metabolism impair liver function, leading to fat gain.",
+    },
+    headparabut2:{
+
+      heading:"What Causes Fatty Liver?",
+      description2:"From an Ayurvedic and modern perspective, several factors contribute to the development of fatty liver disease:",
+      box2: {
+        leftItems: [
+          "Long-term medication use (e.g., steroids, certain antibiotics)",
+          "Obesity and insulin resistance",
+          "Untreated digestive issues",
+          "Sedentary lifestyle"
+        ],
+        rightItems: [
+          "Poor diet (high in fats, sugars, and processed food)",
+          "Chronic stress and sleep disorders",
+          "Alcohol consumption",
+        ]
+      },
+      description3:"At Sreerudra Ayurveda, we address not only the liver condition but also the systemic causes, thereby ensuring lasting recovery.",
+    },
+
+    headparabut4:{
+
+      heading:"What Causes Fatty Liver?",
+      description2:"Fatty liver often goes unnoticed in early stages but may show the following signs as it progresses:",
+      box2: {
+        leftItems: [
+          "Digestive disturbances such as bloating, indigestion, or loss of appetite",
+          "Upper right abdominal ache or heaviness that is mild to moderate",
+          "Chronic fatigue and weakness",
+        ],
+        rightItems: [
+          "Mood swings, irritability, or poor concentration due to liver dysfunction",
+          "Elevated liver enzymes in lab tests",
+          "Jaundice (in advanced cases)",
+        ]
+      },
+      description3:"If you experience any of these, it’s essential to undergo an Ayurvedic liver evaluation.",
+    },
+
+    headparabut3:{
+
+      heading:"What Causes Fatty Liver?",
+      description2:"In Ayurveda, the liver (Yakrit) is regarded as the main location of Ranjaka Pitta. When Pitta and Kapha get vitiated, they impair the digestive fire (Agni), leading to Ama formation. This toxic buildup blocks the liver channels and triggers the accumulation of fat.",
+      grid: [
+          "Diminished Agni (digestive fire)",
+          "Excess Kapha in liver tissues",
+          "Ama clogging microchannels (srotas)",
+          "Pitta imbalance disturbing bile flow"
+        ],
+      description3:"Ayurvedic treatment naturally revitalizes liver health by rekindling Agni, eliminating Ama, and harmonizing the doshas.",
+    },
+    ayurvedictreatmentprotocol: {
+        heading:
+          "Sreerudra’s Ayurvedic Treatment Protocol For Fatty Liver",
+
+        description:
+          "At Sreerudra Ayurveda Multispeciality Hospital In Kerala, Our Fatty Liver Treatment Integrates Traditional Panchakarma Therapies, Powerful Herbal Remedies, And Dietary And Lifestyle Corrections.",
+
+        sections: [
+          {
+            title: "1. Detailed Ayurvedic Diagnosis",
+
+            text:
+              "Our Expert Physicians Conduct Nadi Pariksha (Pulse Diagnosis), Prakriti-Vikriti Analysis, And Review Blood Reports (Including LFT, Ultrasound) To Customize A Treatment Roadmap.",
+          },
+
+          {
+            title: "2. Panchakarma Detox For Liver Cleansing",
+
+            text:
+              "Our Signature Panchakarma Therapies Eliminate Ama And Improve Liver Metabolism:",
+
+            orangeBoxes: [
+              {
+                title: "Virechana",
+
+                description:
+                  "A Therapeutic Detoxification Process Aimed At Eliminating Excess Pitta From The Liver And Gallbladder.",
+              },
+
+              {
+                title: "Abhyanga",
+
+                description:
+                  "Herbal Oil Massage That Improves Circulation And Lymphatic Detox.",
+              },
+
+              {
+                title: "Swedana",
+
+                description:
+                  "Herbal Steam Therapy To Loosen Toxins And Support Fat Metabolism.",
+              },
+
+              {
+                title: "Basti",
+
+                description:
+                  "Medicated Enemas To Correct Vata And Strengthen Digestive And Liver Function.",
+              },
+            ],
+          },
+
+          {
+            title: "3. Herbal Medications For Liver Rejuvenation",
+
+            text:
+              "Ayurvedic Herbal Formulations Work At The Root Level To Flush Out Toxins, Enhance Bile Flow, And Regenerate Liver Tissue. These Time-Tested Remedies Restore Liver Balance And Improve Digestion Holistically.",
+          },
+
+          {
+            title: "4. Diet & Lifestyle Guidance",
+
+            text:
+              "We Recommend A Customized Liver-Friendly Diet, Including:",
+
+            greenBoxes: [
+              "Using Herbs Like Turmeric, Cumin, Coriander, And Ginger",
+
+              "Avoiding Dairy, Fried, And Sugary Foods",
+
+              "Early Dinner And Proper Hydration",
+
+              "Warm, Light Meals",
+            ],
+          },
+        ],
+      },
+
+      headparabut5:{
+        heading:"Sreerudra’s Ayurvedic Treatment Protocol for Fatty Liver",
+
+        description:"Sreerudra Ayurveda provides expert care for fatty liver through authentic Ayurvedic therapies at its accredited centers in Trivandrum and Alappuzha. With decades of expertise in Panchakarma detox and liver care, our experienced doctors deliver personalized therapies based on classical Ayurvedic texts and modern diagnostics. Our treatments are safe, natural, and side-effect-free focused on restoring liver function from the root. Patients receive complete care, including diet plans, follow-up support, and long-term wellness guidance. Trusted by patients across India and abroad, Sreerudra ensures holistic healing, not just temporary relief.",
+        cta:"get relief"
+      },
+
+      faqs: {
+        heading: "Frequently Asked Questions",
+        items: [
+          {
+            question: "Can Ayurveda completely cure varicose veins?",
+            answer: "Yes, Ayurvedic treatments like Raktamokshana and specific herbal protocols can significantly reduce swelling and strengthen vein walls, often leading to a complete recovery if addressed early.",
+          },
+          {
+            question: "How long does the treatment take?",
+            answer: "The duration depends on the severity of the condition. Generally, noticeable improvements start within 2-4 weeks of consistent treatment and lifestyle modifications.",
+          },
+        ],
+      },
 
   },
 

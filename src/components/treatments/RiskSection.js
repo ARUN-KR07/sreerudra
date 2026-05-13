@@ -12,12 +12,12 @@ export default function RiskSection({ data }) {
 
   return (
     <main className="page-spacing">
-      <div className="w-full max-w-[1720px] mx-auto flex flex-col md:flex-row overflow-hidden rounded-[32px] shadow-xl min-h-[794px]
+      <div className="w-full max-w-[1720px] mx-auto flex flex-col lg:flex-row overflow-hidden rounded-[32px] shadow-xl min-h-[794px]
       transition-all duration-500 ">
 
         {/* LEFT — risk wheel */}
-        <div className="w-full md:w-[40%] lg:flex-1 bg-[#E6FAEE] flex flex-col items-center
-          justify-start py-10 lg:py-24 md:h-[794px]
+        <div className="w-full lg:w-[40%] xl:flex-1 bg-[#E6FAEE] flex flex-col items-center
+          justify-start py-10 lg:py-24 lg:h-[794px]
           relative overflow-hidden">
 
           <h2 className="text-[32px] sm:text-[36px] md:text-[32px] lg:text-[48px]
@@ -25,8 +25,8 @@ export default function RiskSection({ data }) {
             {data.risks.heading}
           </h2>
 
-          {/* Mobile grid */}
-          <div className="w-full px-5 lg:hidden mb-10">
+          {/* Mobile + Tablet grid */}
+          <div className="w-full px-5 xl:hidden mb-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {data.risks.items.map((item, i) => (
                 <div
@@ -53,8 +53,8 @@ export default function RiskSection({ data }) {
             </div>
           </div>
 
-          {/* Desktop/Tablet radial layout */}
-          <div className="hidden md:block scale-[0.45] lg:scale-[0.6] xl:scale-[0.8] 2xl:scale-100 origin-center mt-10 ">
+          {/* Desktop radial layout */}
+          <div className="hidden xl:block scale-[0.45] lg:scale-[0.6] xl:scale-[0.8] 2xl:scale-100 origin-center mt-10 ">
             <div className="relative flex items-center justify-center">
 
               {/* Centre bubble */}
@@ -139,8 +139,8 @@ export default function RiskSection({ data }) {
         </div>
 
         {/* RIGHT — video */}
-        <div className="w-full md:w-[60%] lg:w-[600px] md:h-[794px] bg-[#004e22] text-white flex flex-col
-          items-center justify-start text-center md:text-left
+        <div className="w-full lg:w-[60%] xl:w-[600px] lg:h-[794px] bg-[#004e22] text-white flex flex-col
+          items-center justify-start text-center lg:text-left
           px-6 sm:px-10 md:px-10 lg:px-24 py-10 sm:py-14 md:py-24">
 
           <h2 className="text-[28px] sm:text-[36px] lg:text-[42px] font-bold mb-6 font-serif leading-tight">
@@ -158,7 +158,7 @@ export default function RiskSection({ data }) {
               src={data.risks.videoSection.image}
               alt="doctor"
               fill
-              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 500px"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 500px"
               className="object-cover transition-transform duration-700 hover:scale-105"
             />
 

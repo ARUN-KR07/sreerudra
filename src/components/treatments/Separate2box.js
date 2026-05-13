@@ -1,7 +1,11 @@
 import { Leaf } from "lucide-react";
 
-export default function Seperate2box({ data }) {
-    if (!data?.seperate2box?.leftItems?.length) return null;
+export default function Seperate2box({ data, sectionKey = "seperate2box" }) {
+    const section = data?.[sectionKey];
+
+    if (!section?.leftItems?.length && !section?.rightItems?.length) {
+        return null;
+    }
 
     return (
         <section className="page-container page-spacing">
@@ -9,13 +13,17 @@ export default function Seperate2box({ data }) {
             {/* Heading */}
             <div className="max-w-7xl mx-auto text-center mb-14">
 
-                <h2 className="text-[30px] md:text-[42px] font-bold text-black mb-6">
-                    {data?.seperate2box?.heading}
-                </h2>
+                {section?.heading && (
+                    <h2 className="text-[30px] md:text-[42px] font-bold text-black mb-6">
+                        {section.heading}
+                    </h2>
+                )}
 
-                <p className="text-[14px] md:text-[16px] leading-[1.9] text-[#333] font-medium">
-                    {data?.seperate2box?.description}
-                </p>
+                {section?.description && (
+                    <p className="text-[14px] md:text-[16px] leading-[1.9] text-[#333] font-medium">
+                        {section.description}
+                    </p>
+                )}
 
             </div>
 
@@ -25,15 +33,17 @@ export default function Seperate2box({ data }) {
                 {/* Left */}
                 <div className="bg-[#E6FAEE] rounded-[30px] px-6 md:px-10 py-10">
 
-                    <h3 className="text-center text-[20px] md:text-[32px] font-bold text-black mb-8">
-                        {data?.seperate2box?.leftTitle}
-                    </h3>
+                    {section?.leftTitle && (
+                        <h3 className="text-center text-[20px] md:text-[32px] font-bold text-black mb-8">
+                            {section.leftTitle}
+                        </h3>
+                    )}
 
                     <div className="w-full h-[1px] bg-[#008439] mb-10" />
 
                     <div className="space-y-10">
 
-                        {data?.seperate2box?.leftItems?.map((item, index) => (
+                        {section?.leftItems?.map((item, index) => (
                             <div key={index} className="flex gap-5">
 
                                 <Leaf
@@ -55,15 +65,17 @@ export default function Seperate2box({ data }) {
                 {/* Right */}
                 <div className="bg-[#E6FAEE] rounded-[30px] px-6 md:px-10 py-10">
 
-                    <h3 className="text-center text-[20px] md:text-[32px] font-bold text-black mb-8">
-                        {data?.seperate2box?.rightTitle}
-                    </h3>
+                    {section?.rightTitle && (
+                        <h3 className="text-center text-[20px] md:text-[32px] font-bold text-black mb-8">
+                            {section.rightTitle}
+                        </h3>
+                    )}
 
                     <div className="w-full h-[1px] bg-[#008439] mb-10" />
 
                     <div className="space-y-10">
 
-                        {data?.seperate2box?.rightItems?.map((item, index) => (
+                        {section?.rightItems?.map((item, index) => (
                             <div key={index} className="flex gap-5">
 
                                 <Leaf

@@ -3,7 +3,7 @@ import HeroSection from "@/components/treatments/HeroSection";
 import ConditionsGrid from "@/components/treatments/Grids";
 import RiskSection from "@/components/treatments/RiskSection";
 import CausesSection from "@/components/treatments/CausesSection";
-import SusceptibleSection from "@/components/treatments/SusceptibleSection";
+import Greentabs from "@/components/treatments/Greentabs";
 import RelatedTreatments from "@/components/treatments/RelatedTreatments";
 import ConsultationForm from "@/components/form/ConsultationForm";
 import TreatmentClientWrapper from "@/components/treatments/TreatmentClientWrapper";
@@ -29,7 +29,7 @@ export default function CervicalSpondylosisPage() {
   return (
     <div className="flex flex-col gap-[120px] mb-[120px]">
       <HeroSection data={data} />
-      <SusceptibleSection data={data} />
+      <Greentabs data={data} />
       <Cause2 data={data} />
       <AyurvedicAspect data={data} />
       <TreatmentClientWrapper data={data} />
